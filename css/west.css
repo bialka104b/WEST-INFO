@@ -1,0 +1,1543 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2019-04-08, 10:35:21
+    Author     : bialka104@interia.pl
+*/
+@import url("https://fonts.googleapis.com/css?family=Faster+One");
+@import url("https://fonts.googleapis.com/css?family=Exo");
+@import url("https://fonts.googleapis.com/css?family=Italianno");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300i");
+@import url("https://fonts.googleapis.com/css?family=Anton");
+body {
+  cursor: default;
+}
+
+body .row {
+  margin: 0;
+}
+
+body #background-site {
+  background: url(../purty_wood/purty_wood.png);
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  position: fixed;
+}
+
+.col-12 {
+  padding: 0;
+}
+
+.tlo {
+  text-align: center;
+  z-index: 0;
+}
+
+header .pull-right {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  border: 2px solid #390008;
+  border-radius: 3px;
+}
+
+header .pull-right:focus {
+  outline: none;
+}
+
+header .pull-right input {
+  outline-style: none;
+  background: rgba(46, 0, 7, 0.75);
+  color: white;
+  border-radius: 0;
+  border: 0px;
+  font-family: "Roboto", sans-serif;
+  /* firefox 19+ */
+  /* ie */
+}
+
+header .pull-right input::-webkit-input-placeholder {
+  color: white;
+}
+
+header .pull-right input::-moz-placeholder {
+  color: white;
+}
+
+header .pull-right input:-ms-input-placeholder {
+  color: white;
+}
+
+header .pull-right input:focus {
+  -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+          box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  background: rgba(46, 0, 7, 0.75);
+  color: white;
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+  transform: skew(20deg, -10deg);
+  -webkit-transform: skew(20deg, -10deg);
+  -moz-transform: skew(20deg, -10deg);
+  -o-transform: skew(20deg, -10deg);
+  margin-bottom: -150px;
+  margin-left: -300px;
+  z-index: 2;
+}
+
+header h1 {
+  font-family: "Faster One", cursive;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 100px;
+  color: #390008;
+  text-shadow: 15px 15px 5px #935728;
+  text-decoration: overline;
+}
+
+header p {
+  font-family: "Anton", sans-serif;
+  color: #390008;
+}
+
+header p span {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border: 0px solid black !important;
+}
+
+.card .card-header {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 0px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card .card-header ul li {
+  font-size: 15px;
+}
+
+.card .card-header ul li a {
+  color: #390008;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 0.8px;
+}
+
+.card .card-header ul li .active {
+  color: white;
+  background: #390008;
+}
+
+section {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 992px) {
+  section {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  section {
+    width: 80%;
+  }
+}
+
+#sekcja-rzemioslo {
+  font-size: 13px;
+}
+
+#sekcja-rzemioslo #rzemioslo {
+  background: url(../light_grey_floral_motif/light_grey_floral_motif.png);
+  border-radius: 38px;
+  border: 3px solid #380007;
+  -webkit-box-shadow: 0px 0px 20px 15px #935728;
+          box-shadow: 0px 0px 20px 15px #935728;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 {
+  background: rgba(46, 0, 7, 0.75);
+  color: white;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-12 h2,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-12 h2,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-12 h2,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-12 h2,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-12 h2,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-12 h2,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-12 h2 {
+  font-family: "Italianno", cursive;
+  margin-bottom: 0;
+  font-size: 3.5em;
+  padding: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-shadow: 15px 15px 5px #390008;
+}
+
+@media (min-width: 992px) {
+  #sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-12 h2,
+  #sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-12 h2,
+  #sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-12 h2,
+  #sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-12 h2,
+  #sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-12 h2,
+  #sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-12 h2,
+  #sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-12 h2 {
+    font-size: 5em;
+  }
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .craft,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .craft,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .craft,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .craft,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .craft,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .craft,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .craft {
+  border-bottom: 2px solid #380007;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .craft i,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .craft i,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .craft i,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .craft i,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .craft i,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .craft i,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .craft i {
+  font-size: 0.5em;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo {
+  border-left: 1px solid #380007;
+  border-right: 1px solid #380007;
+  width: 100%;
+  height: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: "Roboto", sans-serif;
+  display: none;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .row-kucharz h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .row-znachor h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .row-rymarz h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .row-kowal h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .row-kucharz h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .row-znachor h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .row-rymarz h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .row-kowal h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .row-kucharz h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .row-znachor h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .row-rymarz h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .row-kowal h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .row-kucharz h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .row-znachor h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .row-rymarz h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .row-kowal h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .row-kucharz h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .row-znachor h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .row-rymarz h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .row-kowal h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .row-kucharz h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .row-znachor h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .row-rymarz h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .row-kowal h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .row-kucharz h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .row-znachor h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .row-rymarz h3,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .row-kowal h3 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  margin-bottom: 0;
+  height: 80px;
+  width: 100%;
+  text-align: left;
+  font-family: "Italianno", cursive;
+  font-weight: bold;
+  text-shadow: 2px 5px 1px #390008;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .row-kucharz,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .row-kucharz,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .row-kucharz,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .row-kucharz,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .row-kucharz,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .row-kucharz,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .row-kucharz {
+  background: url(../image/craft/MiodPitny.png) no-repeat right top;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .row-znachor,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .row-znachor,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .row-znachor,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .row-znachor,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .row-znachor,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .row-znachor,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .row-znachor {
+  background: url(../image/craft/Herbata.png) no-repeat right top;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .row-rymarz,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .row-rymarz,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .row-rymarz,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .row-rymarz,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .row-rymarz,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .row-rymarz,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .row-rymarz {
+  background: url(../image/craft/SchowekNaAmunicje.png) no-repeat right top;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .row-kowal,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .row-kowal,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .row-kowal,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .row-kowal,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .row-kowal,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .row-kowal,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .row-kowal {
+  background: url(../image/craft/Bagnet.png) no-repeat right top;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product {
+  margin-bottom: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #380007;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .product-img,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .product-img,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .product-img,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .product-img,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .product-img,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .product-img,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .product-img {
+  position: relative;
+  padding: 0;
+  width: 73px;
+  height: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .product-img a,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .product-img a,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .product-img a,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .product-img a,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .product-img a,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .product-img a,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .product-img a {
+  display: block;
+  width: 100%;
+  border-radius: 55%;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .product-img a img,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .product-img a img,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .product-img a img,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .product-img a img,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .product-img a img,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .product-img a img,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .product-img a img {
+  background: url(../purty_wood/purty_wood.png) no-repeat;
+  border: 3px outset #380007;
+  border-radius: 50%;
+  width: 100%;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .product-img .my-popup,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .product-img .my-popup,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .product-img .my-popup,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .product-img .my-popup,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .product-img .my-popup,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .product-img .my-popup,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .product-img .my-popup {
+  display: none;
+  background: url(../purty_wood/purty_wood.png);
+  position: absolute;
+  z-index: 2;
+  width: 200px;
+  border: 2px solid #380007;
+  border-radius: 10px 10px 0 0;
+  -webkit-box-shadow: 0px 0px 10px 1px white;
+          box-shadow: 0px 0px 10px 1px white;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .product-img .my-popup .opis,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .product-img .my-popup .opis,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .product-img .my-popup .opis,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .product-img .my-popup .opis,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .product-img .my-popup .opis,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .product-img .my-popup .opis,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .product-img .my-popup .opis {
+  padding-top: 30px;
+  background: url(../light_grey_floral_motif/brown.png);
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .product-img .my-popup .opis p,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .product-img .my-popup .opis p,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .product-img .my-popup .opis p,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .product-img .my-popup .opis p,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .product-img .my-popup .opis p,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .product-img .my-popup .opis p,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .product-img .my-popup .opis p {
+  margin: 0;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .product-description,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .product-description,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .product-description,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .product-description,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .product-description,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .product-description,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .product-description {
+  padding: 0;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .product-description h6,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .product-description h6,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .product-description h6,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .product-description h6,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .product-description h6,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .product-description h6,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .product-description h6 {
+  margin-bottom: 2px;
+  font-weight: normal;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  border-bottom: 1px dotted white;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .product-description p,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .product-description p,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .product-description p,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .product-description p,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .product-description p,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .product-description p,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .product-description p {
+  font-size: 10px;
+  margin-bottom: 2px;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .product-description p:first-of-type,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .product-description p:first-of-type,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .product-description p:first-of-type,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .product-description p:first-of-type,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .product-description p:first-of-type,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .product-description p:first-of-type,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .product-description p:first-of-type {
+  padding-top: 3px;
+  height: 50px;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .product-description p span,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .product-description p span,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .product-description p span,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .product-description p span,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .product-description p span,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .product-description p span,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .product-description p span {
+  margin-right: 5px;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .product-description p input,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .product-description p input,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .product-description p input,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .product-description p input,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .product-description p input,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .product-description p input,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .product-description p input {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 0px solid;
+  width: 50%;
+  text-align: center;
+  border-radius: 5px;
+  outline: none;
+}
+
+@media (min-width: 992px) {
+  #sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .product-description p input,
+  #sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .product-description p input,
+  #sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .product-description p input,
+  #sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .product-description p input,
+  #sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .product-description p input,
+  #sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .product-description p input,
+  #sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .product-description p input {
+    border-radius: 2px;
+  }
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .product-description p img,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .product-description p img,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .product-description p img,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .product-description p img,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .product-description p img,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .product-description p img,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .product-description p img {
+  width: 17px;
+  height: 14px;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .span-stopien,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .span-stopien,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .span-stopien,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .span-stopien,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .span-stopien,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .span-stopien,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .span-stopien {
+  padding: 0;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  cursor: pointer;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .span-stopien i,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .span-stopien i,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .span-stopien i,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .span-stopien i,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .span-stopien i,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .span-stopien i,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .span-stopien i {
+  display: block;
+  width: 100%;
+  font-size: 1.7em;
+  color: #380007;
+  text-shadow: 1px 1px 2px white;
+  cursor: pointer;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .wytworzenie,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .wytworzenie,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .wytworzenie,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .wytworzenie,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .wytworzenie,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .wytworzenie,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .wytworzenie {
+  padding: 0;
+  margin-top: 15px;
+  display: none;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .wytworzenie .wytworzenie-produkty,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .wytworzenie .wytworzenie-produkty,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .wytworzenie .wytworzenie-produkty,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .wytworzenie .wytworzenie-produkty,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .wytworzenie .wytworzenie-produkty,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .wytworzenie .wytworzenie-produkty,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .wytworzenie .wytworzenie-produkty {
+  padding: 0;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .wytworzenie .wytworzenie-przepis,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .wytworzenie .wytworzenie-przepis,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .wytworzenie .wytworzenie-przepis,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .wytworzenie .wytworzenie-przepis,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .wytworzenie .wytworzenie-przepis,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .wytworzenie .wytworzenie-przepis,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .wytworzenie .wytworzenie-przepis {
+  padding: 0;
+  text-align: center;
+  width: 33px;
+  height: 41px;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .wytworzenie .wytworzenie-przepis div,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .wytworzenie .wytworzenie-przepis div,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .wytworzenie .wytworzenie-przepis div,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .wytworzenie .wytworzenie-przepis div,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .wytworzenie .wytworzenie-przepis div,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .wytworzenie .wytworzenie-przepis div,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .wytworzenie .wytworzenie-przepis div {
+  background: url(../purty_wood/purty_wood.png) no-repeat;
+  border: 2px outset #380007;
+  width: auto;
+  height: auto;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .wytworzenie .wytworzenie-przepis div img,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .wytworzenie .wytworzenie-przepis div img,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .wytworzenie .wytworzenie-przepis div img,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .wytworzenie .wytworzenie-przepis div img,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .wytworzenie .wytworzenie-przepis div img,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .wytworzenie .wytworzenie-przepis div img,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .wytworzenie .wytworzenie-przepis div img {
+  width: 33px;
+  height: auto;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .wytworzenie .opis,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .wytworzenie .opis,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .wytworzenie .opis,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .wytworzenie .opis,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .wytworzenie .opis,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .wytworzenie .opis,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .wytworzenie .opis {
+  font-size: 12px;
+  text-align: center;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .wytworzenie .opis .col-2,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .wytworzenie .opis .col-2,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .wytworzenie .opis .col-2,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .wytworzenie .opis .col-2,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .wytworzenie .opis .col-2,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .wytworzenie .opis .col-2,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .wytworzenie .opis .col-2 {
+  padding: 0;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .wytworzenie .opis .col-2 input,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .wytworzenie .opis .col-2 input,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .wytworzenie .opis .col-2 input,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .wytworzenie .opis .col-2 input,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .wytworzenie .opis .col-2 input,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .wytworzenie .opis .col-2 input,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .wytworzenie .opis .col-2 input {
+  width: 40px;
+  outline: none;
+  background: rgba(46, 0, 7, 0.75);
+  color: white;
+  border: 2px solid #380007;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .wytworzenie .opis .col-10 p,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .wytworzenie .opis .col-10 p,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .wytworzenie .opis .col-10 p,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .wytworzenie .opis .col-10 p,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .wytworzenie .opis .col-10 p,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .wytworzenie .opis .col-10 p,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .wytworzenie .opis .col-10 p {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .wytworzenie .opis .col-10 p span,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .wytworzenie .opis .col-10 p span,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .wytworzenie .opis .col-10 p span,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .wytworzenie .opis .col-10 p span,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .wytworzenie .opis .col-10 p span,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .wytworzenie .opis .col-10 p span,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .wytworzenie .opis .col-10 p span {
+  margin-right: 10px;
+  font-size: 10px;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .wytworzenie .opis .col-10 p .green,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .wytworzenie .opis .col-10 p .green,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .wytworzenie .opis .col-10 p .green,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .wytworzenie .opis .col-10 p .green,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .wytworzenie .opis .col-10 p .green,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .wytworzenie .opis .col-10 p .green,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .wytworzenie .opis .col-10 p .green {
+  color: green;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 .col-rzemioslo .product .wytworzenie .opis .col-10 p .red,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-200 .col-rzemioslo .product .wytworzenie .opis .col-10 p .red,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-300 .col-rzemioslo .product .wytworzenie .opis .col-10 p .red,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-400 .col-rzemioslo .product .wytworzenie .opis .col-10 p .red,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-500 .col-rzemioslo .product .wytworzenie .opis .col-10 p .red,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-600 .col-rzemioslo .product .wytworzenie .opis .col-10 p .red,
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo .product .wytworzenie .opis .col-10 p .red {
+  color: red;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-100 {
+  border-radius: 35px 35px 0 0;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 {
+  border-radius: 0 0 35px 35px;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .craft {
+  border-bottom: none;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-rzemioslo {
+  border-top: 2px solid #380007;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-kucharz {
+  border-bottom-left-radius: 35px !important;
+}
+
+#sekcja-rzemioslo #rzemioslo .rzemioslo-700 .col-kowal {
+  border-bottom-right-radius: 35px !important;
+}
+
+#sekcja-rzemioslo #suma {
+  position: fixed;
+  right: 20px;
+  top: 10%;
+  bottom: 10%;
+  background: rgba(0, 0, 0, 0);
+  width: 150px;
+  height: 100%;
+}
+
+#sekcja-rzemioslo #suma .dodaj {
+  display: inline;
+}
+
+#sekcja-rzemioslo #suma .dodaj tr {
+  background: #380007;
+  color: white;
+}
+
+#sekcja-kalendarz,
+#sekcja-beta,
+#sekcja-fort {
+  font-size: 13px;
+}
+
+@media (max-width: 500px) {
+  #sekcja-kalendarz,
+  #sekcja-beta,
+  #sekcja-fort {
+    font-size: 0.5rem;
+  }
+}
+
+#sekcja-kalendarz #zad-powtarzalne,
+#sekcja-kalendarz #zad-beta,
+#sekcja-kalendarz #mapy-fort,
+#sekcja-beta #zad-powtarzalne,
+#sekcja-beta #zad-beta,
+#sekcja-beta #mapy-fort,
+#sekcja-fort #zad-powtarzalne,
+#sekcja-fort #zad-beta,
+#sekcja-fort #mapy-fort {
+  background: url(../light_grey_floral_motif/light_grey_floral_motif.png);
+  border-radius: 38px;
+  border: 3px solid #380007;
+  -webkit-box-shadow: 0px 0px 20px 15px #935728;
+          box-shadow: 0px 0px 20px 15px #935728;
+}
+
+#sekcja-kalendarz #zad-powtarzalne .miesiac,
+#sekcja-kalendarz #zad-beta .miesiac,
+#sekcja-kalendarz #mapy-fort .miesiac,
+#sekcja-beta #zad-powtarzalne .miesiac,
+#sekcja-beta #zad-beta .miesiac,
+#sekcja-beta #mapy-fort .miesiac,
+#sekcja-fort #zad-powtarzalne .miesiac,
+#sekcja-fort #zad-beta .miesiac,
+#sekcja-fort #mapy-fort .miesiac {
+  background: rgba(46, 0, 7, 0.75);
+  color: white;
+  border-bottom: 2px solid #380007;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#sekcja-kalendarz #zad-powtarzalne .miesiac:first-of-type,
+#sekcja-kalendarz #zad-beta .miesiac:first-of-type,
+#sekcja-kalendarz #mapy-fort .miesiac:first-of-type,
+#sekcja-beta #zad-powtarzalne .miesiac:first-of-type,
+#sekcja-beta #zad-beta .miesiac:first-of-type,
+#sekcja-beta #mapy-fort .miesiac:first-of-type,
+#sekcja-fort #zad-powtarzalne .miesiac:first-of-type,
+#sekcja-fort #zad-beta .miesiac:first-of-type,
+#sekcja-fort #mapy-fort .miesiac:first-of-type {
+  border-radius: 35px 35px 0 0;
+}
+
+#sekcja-kalendarz #zad-powtarzalne .miesiac:last-of-type,
+#sekcja-kalendarz #zad-beta .miesiac:last-of-type,
+#sekcja-kalendarz #mapy-fort .miesiac:last-of-type,
+#sekcja-beta #zad-powtarzalne .miesiac:last-of-type,
+#sekcja-beta #zad-beta .miesiac:last-of-type,
+#sekcja-beta #mapy-fort .miesiac:last-of-type,
+#sekcja-fort #zad-powtarzalne .miesiac:last-of-type,
+#sekcja-fort #zad-beta .miesiac:last-of-type,
+#sekcja-fort #mapy-fort .miesiac:last-of-type {
+  border-radius: 0 0 35px 35px;
+  border-bottom: 0px solid #380007;
+}
+
+#sekcja-kalendarz #zad-powtarzalne .miesiac h2,
+#sekcja-kalendarz #zad-beta .miesiac h2,
+#sekcja-kalendarz #mapy-fort .miesiac h2,
+#sekcja-beta #zad-powtarzalne .miesiac h2,
+#sekcja-beta #zad-beta .miesiac h2,
+#sekcja-beta #mapy-fort .miesiac h2,
+#sekcja-fort #zad-powtarzalne .miesiac h2,
+#sekcja-fort #zad-beta .miesiac h2,
+#sekcja-fort #mapy-fort .miesiac h2 {
+  margin: 0;
+  font-family: "Italianno", cursive;
+  font-size: 3.5em;
+  padding: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-shadow: 15px 15px 5px #390008;
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  #sekcja-kalendarz #zad-powtarzalne .miesiac h2,
+  #sekcja-kalendarz #zad-beta .miesiac h2,
+  #sekcja-kalendarz #mapy-fort .miesiac h2,
+  #sekcja-beta #zad-powtarzalne .miesiac h2,
+  #sekcja-beta #zad-beta .miesiac h2,
+  #sekcja-beta #mapy-fort .miesiac h2,
+  #sekcja-fort #zad-powtarzalne .miesiac h2,
+  #sekcja-fort #zad-beta .miesiac h2,
+  #sekcja-fort #mapy-fort .miesiac h2 {
+    font-size: 5em;
+  }
+}
+
+#sekcja-kalendarz #zad-powtarzalne .miesiac a,
+#sekcja-kalendarz #zad-beta .miesiac a,
+#sekcja-kalendarz #mapy-fort .miesiac a,
+#sekcja-beta #zad-powtarzalne .miesiac a,
+#sekcja-beta #zad-beta .miesiac a,
+#sekcja-beta #mapy-fort .miesiac a,
+#sekcja-fort #zad-powtarzalne .miesiac a,
+#sekcja-fort #zad-beta .miesiac a,
+#sekcja-fort #mapy-fort .miesiac a {
+  color: white;
+  text-decoration: none;
+}
+
+#sekcja-kalendarz #zad-powtarzalne .miesiac a:hover,
+#sekcja-kalendarz #zad-beta .miesiac a:hover,
+#sekcja-kalendarz #mapy-fort .miesiac a:hover,
+#sekcja-beta #zad-powtarzalne .miesiac a:hover,
+#sekcja-beta #zad-beta .miesiac a:hover,
+#sekcja-beta #mapy-fort .miesiac a:hover,
+#sekcja-fort #zad-powtarzalne .miesiac a:hover,
+#sekcja-fort #zad-beta .miesiac a:hover,
+#sekcja-fort #mapy-fort .miesiac a:hover {
+  color: #380007;
+}
+
+#sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela,
+#sekcja-kalendarz #zad-beta .miesiac .zad-tabela,
+#sekcja-kalendarz #zad-beta .miesiac .mapy-tabela,
+#sekcja-kalendarz #mapy-fort .miesiac .zad-tabela,
+#sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela,
+#sekcja-beta #zad-powtarzalne .miesiac .zad-tabela,
+#sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela,
+#sekcja-beta #zad-beta .miesiac .zad-tabela,
+#sekcja-beta #zad-beta .miesiac .mapy-tabela,
+#sekcja-beta #mapy-fort .miesiac .zad-tabela,
+#sekcja-beta #mapy-fort .miesiac .mapy-tabela,
+#sekcja-fort #zad-powtarzalne .miesiac .zad-tabela,
+#sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela,
+#sekcja-fort #zad-beta .miesiac .zad-tabela,
+#sekcja-fort #zad-beta .miesiac .mapy-tabela,
+#sekcja-fort #mapy-fort .miesiac .zad-tabela,
+#sekcja-fort #mapy-fort .miesiac .mapy-tabela {
+  padding: 2px;
+  border: 2px solid #380007;
+  border-radius: 5px 5px;
+  display: none;
+}
+
+#sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row,
+#sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row,
+#sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row,
+#sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row,
+#sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row,
+#sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row,
+#sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row,
+#sekcja-beta #zad-beta .miesiac .zad-tabela div.row,
+#sekcja-beta #zad-beta .miesiac .mapy-tabela div.row,
+#sekcja-beta #mapy-fort .miesiac .zad-tabela div.row,
+#sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row,
+#sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row,
+#sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row,
+#sekcja-fort #zad-beta .miesiac .zad-tabela div.row,
+#sekcja-fort #zad-beta .miesiac .mapy-tabela div.row,
+#sekcja-fort #mapy-fort .miesiac .zad-tabela div.row,
+#sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row {
+  border-bottom: 2px solid #380007;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row:last-of-type,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row:last-of-type,
+#sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row:last-of-type,
+#sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row:last-of-type,
+#sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row:last-of-type,
+#sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row:last-of-type,
+#sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row:last-of-type,
+#sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row:last-of-type,
+#sekcja-beta #zad-beta .miesiac .zad-tabela div.row:last-of-type,
+#sekcja-beta #zad-beta .miesiac .mapy-tabela div.row:last-of-type,
+#sekcja-beta #mapy-fort .miesiac .zad-tabela div.row:last-of-type,
+#sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row:last-of-type,
+#sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row:last-of-type,
+#sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row:last-of-type,
+#sekcja-fort #zad-beta .miesiac .zad-tabela div.row:last-of-type,
+#sekcja-fort #zad-beta .miesiac .mapy-tabela div.row:last-of-type,
+#sekcja-fort #mapy-fort .miesiac .zad-tabela div.row:last-of-type,
+#sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row:last-of-type {
+  border-bottom: 0px solid #380007;
+}
+
+@media (max-width: 576px) {
+  #sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row,
+  #sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row,
+  #sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row,
+  #sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row,
+  #sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row,
+  #sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row,
+  #sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row,
+  #sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row,
+  #sekcja-beta #zad-beta .miesiac .zad-tabela div.row,
+  #sekcja-beta #zad-beta .miesiac .mapy-tabela div.row,
+  #sekcja-beta #mapy-fort .miesiac .zad-tabela div.row,
+  #sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row,
+  #sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row,
+  #sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row,
+  #sekcja-fort #zad-beta .miesiac .zad-tabela div.row,
+  #sekcja-fort #zad-beta .miesiac .mapy-tabela div.row,
+  #sekcja-fort #mapy-fort .miesiac .zad-tabela div.row,
+  #sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row {
+    margin-bottom: 5px;
+    border: 0px solid #380007;
+    border-bottom: 2px solid #380007;
+  }
+}
+
+#sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa,
+#sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row .nazwa,
+#sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row .nazwa,
+#sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row .nazwa,
+#sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row .nazwa,
+#sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa,
+#sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa,
+#sekcja-beta #zad-beta .miesiac .zad-tabela div.row .nazwa,
+#sekcja-beta #zad-beta .miesiac .mapy-tabela div.row .nazwa,
+#sekcja-beta #mapy-fort .miesiac .zad-tabela div.row .nazwa,
+#sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row .nazwa,
+#sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa,
+#sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa,
+#sekcja-fort #zad-beta .miesiac .zad-tabela div.row .nazwa,
+#sekcja-fort #zad-beta .miesiac .mapy-tabela div.row .nazwa,
+#sekcja-fort #mapy-fort .miesiac .zad-tabela div.row .nazwa,
+#sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row .nazwa {
+  font-weight: normal;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding: 0;
+  border-bottom: 2px solid #380007;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  text-shadow: 2px 2px 1px #390008;
+  text-align: left;
+  padding-left: 20px;
+}
+
+#sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row .data-nagroda,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa-link,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row .data-nagroda,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa-link,
+#sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row .data-nagroda,
+#sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row .nazwa-link,
+#sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row .data-nagroda,
+#sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row .nazwa-link,
+#sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row .data-nagroda,
+#sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row .nazwa-link,
+#sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row .data-nagroda,
+#sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row .nazwa-link,
+#sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row .data-nagroda,
+#sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa-link,
+#sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row .data-nagroda,
+#sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa-link,
+#sekcja-beta #zad-beta .miesiac .zad-tabela div.row .data-nagroda,
+#sekcja-beta #zad-beta .miesiac .zad-tabela div.row .nazwa-link,
+#sekcja-beta #zad-beta .miesiac .mapy-tabela div.row .data-nagroda,
+#sekcja-beta #zad-beta .miesiac .mapy-tabela div.row .nazwa-link,
+#sekcja-beta #mapy-fort .miesiac .zad-tabela div.row .data-nagroda,
+#sekcja-beta #mapy-fort .miesiac .zad-tabela div.row .nazwa-link,
+#sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row .data-nagroda,
+#sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row .nazwa-link,
+#sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row .data-nagroda,
+#sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa-link,
+#sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row .data-nagroda,
+#sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa-link,
+#sekcja-fort #zad-beta .miesiac .zad-tabela div.row .data-nagroda,
+#sekcja-fort #zad-beta .miesiac .zad-tabela div.row .nazwa-link,
+#sekcja-fort #zad-beta .miesiac .mapy-tabela div.row .data-nagroda,
+#sekcja-fort #zad-beta .miesiac .mapy-tabela div.row .nazwa-link,
+#sekcja-fort #mapy-fort .miesiac .zad-tabela div.row .data-nagroda,
+#sekcja-fort #mapy-fort .miesiac .zad-tabela div.row .nazwa-link,
+#sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row .data-nagroda,
+#sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row .nazwa-link {
+  padding: 5px;
+  font-weight: normal;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+#sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row .data-nagroda h3,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa-link h3,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row .data-nagroda h3,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa-link h3,
+#sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row .data-nagroda h3,
+#sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row .nazwa-link h3,
+#sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row .data-nagroda h3,
+#sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row .nazwa-link h3,
+#sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row .data-nagroda h3,
+#sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row .nazwa-link h3,
+#sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row .data-nagroda h3,
+#sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row .nazwa-link h3,
+#sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row .data-nagroda h3,
+#sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa-link h3,
+#sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row .data-nagroda h3,
+#sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa-link h3,
+#sekcja-beta #zad-beta .miesiac .zad-tabela div.row .data-nagroda h3,
+#sekcja-beta #zad-beta .miesiac .zad-tabela div.row .nazwa-link h3,
+#sekcja-beta #zad-beta .miesiac .mapy-tabela div.row .data-nagroda h3,
+#sekcja-beta #zad-beta .miesiac .mapy-tabela div.row .nazwa-link h3,
+#sekcja-beta #mapy-fort .miesiac .zad-tabela div.row .data-nagroda h3,
+#sekcja-beta #mapy-fort .miesiac .zad-tabela div.row .nazwa-link h3,
+#sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row .data-nagroda h3,
+#sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row .nazwa-link h3,
+#sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row .data-nagroda h3,
+#sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa-link h3,
+#sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row .data-nagroda h3,
+#sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa-link h3,
+#sekcja-fort #zad-beta .miesiac .zad-tabela div.row .data-nagroda h3,
+#sekcja-fort #zad-beta .miesiac .zad-tabela div.row .nazwa-link h3,
+#sekcja-fort #zad-beta .miesiac .mapy-tabela div.row .data-nagroda h3,
+#sekcja-fort #zad-beta .miesiac .mapy-tabela div.row .nazwa-link h3,
+#sekcja-fort #mapy-fort .miesiac .zad-tabela div.row .data-nagroda h3,
+#sekcja-fort #mapy-fort .miesiac .zad-tabela div.row .nazwa-link h3,
+#sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row .data-nagroda h3,
+#sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row .nazwa-link h3 {
+  width: 100%;
+  text-align: left;
+  font-family: "Italianno", cursive;
+  font-weight: bold;
+  text-shadow: 2px 5px 1px #390008;
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  #sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row .data-nagroda h3,
+  #sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa-link h3,
+  #sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row .data-nagroda h3,
+  #sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa-link h3,
+  #sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row .data-nagroda h3,
+  #sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row .nazwa-link h3,
+  #sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row .data-nagroda h3,
+  #sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row .nazwa-link h3,
+  #sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row .data-nagroda h3,
+  #sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row .nazwa-link h3,
+  #sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row .data-nagroda h3,
+  #sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row .nazwa-link h3,
+  #sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row .data-nagroda h3,
+  #sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa-link h3,
+  #sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row .data-nagroda h3,
+  #sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa-link h3,
+  #sekcja-beta #zad-beta .miesiac .zad-tabela div.row .data-nagroda h3,
+  #sekcja-beta #zad-beta .miesiac .zad-tabela div.row .nazwa-link h3,
+  #sekcja-beta #zad-beta .miesiac .mapy-tabela div.row .data-nagroda h3,
+  #sekcja-beta #zad-beta .miesiac .mapy-tabela div.row .nazwa-link h3,
+  #sekcja-beta #mapy-fort .miesiac .zad-tabela div.row .data-nagroda h3,
+  #sekcja-beta #mapy-fort .miesiac .zad-tabela div.row .nazwa-link h3,
+  #sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row .data-nagroda h3,
+  #sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row .nazwa-link h3,
+  #sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row .data-nagroda h3,
+  #sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa-link h3,
+  #sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row .data-nagroda h3,
+  #sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa-link h3,
+  #sekcja-fort #zad-beta .miesiac .zad-tabela div.row .data-nagroda h3,
+  #sekcja-fort #zad-beta .miesiac .zad-tabela div.row .nazwa-link h3,
+  #sekcja-fort #zad-beta .miesiac .mapy-tabela div.row .data-nagroda h3,
+  #sekcja-fort #zad-beta .miesiac .mapy-tabela div.row .nazwa-link h3,
+  #sekcja-fort #mapy-fort .miesiac .zad-tabela div.row .data-nagroda h3,
+  #sekcja-fort #mapy-fort .miesiac .zad-tabela div.row .nazwa-link h3,
+  #sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row .data-nagroda h3,
+  #sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row .nazwa-link h3 {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+}
+
+#sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row .data-nagroda .img,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa-link .img,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row .data-nagroda .img,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa-link .img,
+#sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row .data-nagroda .img,
+#sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row .nazwa-link .img,
+#sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row .data-nagroda .img,
+#sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row .nazwa-link .img,
+#sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row .data-nagroda .img,
+#sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row .nazwa-link .img,
+#sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row .data-nagroda .img,
+#sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row .nazwa-link .img,
+#sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row .data-nagroda .img,
+#sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa-link .img,
+#sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row .data-nagroda .img,
+#sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa-link .img,
+#sekcja-beta #zad-beta .miesiac .zad-tabela div.row .data-nagroda .img,
+#sekcja-beta #zad-beta .miesiac .zad-tabela div.row .nazwa-link .img,
+#sekcja-beta #zad-beta .miesiac .mapy-tabela div.row .data-nagroda .img,
+#sekcja-beta #zad-beta .miesiac .mapy-tabela div.row .nazwa-link .img,
+#sekcja-beta #mapy-fort .miesiac .zad-tabela div.row .data-nagroda .img,
+#sekcja-beta #mapy-fort .miesiac .zad-tabela div.row .nazwa-link .img,
+#sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row .data-nagroda .img,
+#sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row .nazwa-link .img,
+#sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row .data-nagroda .img,
+#sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa-link .img,
+#sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row .data-nagroda .img,
+#sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa-link .img,
+#sekcja-fort #zad-beta .miesiac .zad-tabela div.row .data-nagroda .img,
+#sekcja-fort #zad-beta .miesiac .zad-tabela div.row .nazwa-link .img,
+#sekcja-fort #zad-beta .miesiac .mapy-tabela div.row .data-nagroda .img,
+#sekcja-fort #zad-beta .miesiac .mapy-tabela div.row .nazwa-link .img,
+#sekcja-fort #mapy-fort .miesiac .zad-tabela div.row .data-nagroda .img,
+#sekcja-fort #mapy-fort .miesiac .zad-tabela div.row .nazwa-link .img,
+#sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row .data-nagroda .img,
+#sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row .nazwa-link .img {
+  margin: 0;
+}
+
+#sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row .data-nagroda .img div.col-3,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa-link .img div.col-3,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3,
+#sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row .data-nagroda .img div.col-3,
+#sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row .nazwa-link .img div.col-3,
+#sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3,
+#sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3,
+#sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row .data-nagroda .img div.col-3,
+#sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row .nazwa-link .img div.col-3,
+#sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3,
+#sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3,
+#sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row .data-nagroda .img div.col-3,
+#sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa-link .img div.col-3,
+#sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3,
+#sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3,
+#sekcja-beta #zad-beta .miesiac .zad-tabela div.row .data-nagroda .img div.col-3,
+#sekcja-beta #zad-beta .miesiac .zad-tabela div.row .nazwa-link .img div.col-3,
+#sekcja-beta #zad-beta .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3,
+#sekcja-beta #zad-beta .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3,
+#sekcja-beta #mapy-fort .miesiac .zad-tabela div.row .data-nagroda .img div.col-3,
+#sekcja-beta #mapy-fort .miesiac .zad-tabela div.row .nazwa-link .img div.col-3,
+#sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3,
+#sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3,
+#sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row .data-nagroda .img div.col-3,
+#sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa-link .img div.col-3,
+#sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3,
+#sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3,
+#sekcja-fort #zad-beta .miesiac .zad-tabela div.row .data-nagroda .img div.col-3,
+#sekcja-fort #zad-beta .miesiac .zad-tabela div.row .nazwa-link .img div.col-3,
+#sekcja-fort #zad-beta .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3,
+#sekcja-fort #zad-beta .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3,
+#sekcja-fort #mapy-fort .miesiac .zad-tabela div.row .data-nagroda .img div.col-3,
+#sekcja-fort #mapy-fort .miesiac .zad-tabela div.row .nazwa-link .img div.col-3,
+#sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3,
+#sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3 {
+  padding: 0;
+}
+
+#sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row .data-nagroda .img div.col-3 .nagroda,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa-link .img div.col-3 .nagroda,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3 .nagroda,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3 .nagroda,
+#sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row .data-nagroda .img div.col-3 .nagroda,
+#sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row .nazwa-link .img div.col-3 .nagroda,
+#sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3 .nagroda,
+#sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3 .nagroda,
+#sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row .data-nagroda .img div.col-3 .nagroda,
+#sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row .nazwa-link .img div.col-3 .nagroda,
+#sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3 .nagroda,
+#sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3 .nagroda,
+#sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row .data-nagroda .img div.col-3 .nagroda,
+#sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa-link .img div.col-3 .nagroda,
+#sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3 .nagroda,
+#sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3 .nagroda,
+#sekcja-beta #zad-beta .miesiac .zad-tabela div.row .data-nagroda .img div.col-3 .nagroda,
+#sekcja-beta #zad-beta .miesiac .zad-tabela div.row .nazwa-link .img div.col-3 .nagroda,
+#sekcja-beta #zad-beta .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3 .nagroda,
+#sekcja-beta #zad-beta .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3 .nagroda,
+#sekcja-beta #mapy-fort .miesiac .zad-tabela div.row .data-nagroda .img div.col-3 .nagroda,
+#sekcja-beta #mapy-fort .miesiac .zad-tabela div.row .nazwa-link .img div.col-3 .nagroda,
+#sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3 .nagroda,
+#sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3 .nagroda,
+#sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row .data-nagroda .img div.col-3 .nagroda,
+#sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa-link .img div.col-3 .nagroda,
+#sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3 .nagroda,
+#sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3 .nagroda,
+#sekcja-fort #zad-beta .miesiac .zad-tabela div.row .data-nagroda .img div.col-3 .nagroda,
+#sekcja-fort #zad-beta .miesiac .zad-tabela div.row .nazwa-link .img div.col-3 .nagroda,
+#sekcja-fort #zad-beta .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3 .nagroda,
+#sekcja-fort #zad-beta .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3 .nagroda,
+#sekcja-fort #mapy-fort .miesiac .zad-tabela div.row .data-nagroda .img div.col-3 .nagroda,
+#sekcja-fort #mapy-fort .miesiac .zad-tabela div.row .nazwa-link .img div.col-3 .nagroda,
+#sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3 .nagroda,
+#sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3 .nagroda {
+  height: 34px;
+  width: 34px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+#sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row .data-nagroda .img div.col-3 p,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa-link .img div.col-3 p,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3 p,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3 p,
+#sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row .data-nagroda .img div.col-3 p,
+#sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row .nazwa-link .img div.col-3 p,
+#sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3 p,
+#sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3 p,
+#sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row .data-nagroda .img div.col-3 p,
+#sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row .nazwa-link .img div.col-3 p,
+#sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3 p,
+#sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3 p,
+#sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row .data-nagroda .img div.col-3 p,
+#sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa-link .img div.col-3 p,
+#sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3 p,
+#sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3 p,
+#sekcja-beta #zad-beta .miesiac .zad-tabela div.row .data-nagroda .img div.col-3 p,
+#sekcja-beta #zad-beta .miesiac .zad-tabela div.row .nazwa-link .img div.col-3 p,
+#sekcja-beta #zad-beta .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3 p,
+#sekcja-beta #zad-beta .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3 p,
+#sekcja-beta #mapy-fort .miesiac .zad-tabela div.row .data-nagroda .img div.col-3 p,
+#sekcja-beta #mapy-fort .miesiac .zad-tabela div.row .nazwa-link .img div.col-3 p,
+#sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3 p,
+#sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3 p,
+#sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row .data-nagroda .img div.col-3 p,
+#sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa-link .img div.col-3 p,
+#sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3 p,
+#sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3 p,
+#sekcja-fort #zad-beta .miesiac .zad-tabela div.row .data-nagroda .img div.col-3 p,
+#sekcja-fort #zad-beta .miesiac .zad-tabela div.row .nazwa-link .img div.col-3 p,
+#sekcja-fort #zad-beta .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3 p,
+#sekcja-fort #zad-beta .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3 p,
+#sekcja-fort #mapy-fort .miesiac .zad-tabela div.row .data-nagroda .img div.col-3 p,
+#sekcja-fort #mapy-fort .miesiac .zad-tabela div.row .nazwa-link .img div.col-3 p,
+#sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row .data-nagroda .img div.col-3 p,
+#sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row .nazwa-link .img div.col-3 p {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 10px;
+}
+
+#sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa-link,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa-link,
+#sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row .nazwa-link,
+#sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row .nazwa-link,
+#sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row .nazwa-link,
+#sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row .nazwa-link,
+#sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa-link,
+#sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa-link,
+#sekcja-beta #zad-beta .miesiac .zad-tabela div.row .nazwa-link,
+#sekcja-beta #zad-beta .miesiac .mapy-tabela div.row .nazwa-link,
+#sekcja-beta #mapy-fort .miesiac .zad-tabela div.row .nazwa-link,
+#sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row .nazwa-link,
+#sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row .nazwa-link,
+#sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row .nazwa-link,
+#sekcja-fort #zad-beta .miesiac .zad-tabela div.row .nazwa-link,
+#sekcja-fort #zad-beta .miesiac .mapy-tabela div.row .nazwa-link,
+#sekcja-fort #mapy-fort .miesiac .zad-tabela div.row .nazwa-link,
+#sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row .nazwa-link {
+  border-left: 1px solid #380007;
+  border-right: 1px solid #380007;
+}
+
+#sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row .col-12,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row .col-12,
+#sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row .col-12,
+#sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row .col-12,
+#sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row .col-12,
+#sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row .col-12,
+#sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row .col-12,
+#sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row .col-12,
+#sekcja-beta #zad-beta .miesiac .zad-tabela div.row .col-12,
+#sekcja-beta #zad-beta .miesiac .mapy-tabela div.row .col-12,
+#sekcja-beta #mapy-fort .miesiac .zad-tabela div.row .col-12,
+#sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row .col-12,
+#sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row .col-12,
+#sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row .col-12,
+#sekcja-fort #zad-beta .miesiac .zad-tabela div.row .col-12,
+#sekcja-fort #zad-beta .miesiac .mapy-tabela div.row .col-12,
+#sekcja-fort #mapy-fort .miesiac .zad-tabela div.row .col-12,
+#sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row .col-12 {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+#sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row .col-12 p,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row .col-12 p,
+#sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row .col-12 p,
+#sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row .col-12 p,
+#sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row .col-12 p,
+#sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row .col-12 p,
+#sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row .col-12 p,
+#sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row .col-12 p,
+#sekcja-beta #zad-beta .miesiac .zad-tabela div.row .col-12 p,
+#sekcja-beta #zad-beta .miesiac .mapy-tabela div.row .col-12 p,
+#sekcja-beta #mapy-fort .miesiac .zad-tabela div.row .col-12 p,
+#sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row .col-12 p,
+#sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row .col-12 p,
+#sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row .col-12 p,
+#sekcja-fort #zad-beta .miesiac .zad-tabela div.row .col-12 p,
+#sekcja-fort #zad-beta .miesiac .mapy-tabela div.row .col-12 p,
+#sekcja-fort #mapy-fort .miesiac .zad-tabela div.row .col-12 p,
+#sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row .col-12 p {
+  margin-bottom: 5px;
+}
+
+#sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row .col-12 .place-img,
+#sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row .col-12 .place-img,
+#sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row .col-12 .place-img,
+#sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row .col-12 .place-img,
+#sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row .col-12 .place-img,
+#sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row .col-12 .place-img,
+#sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row .col-12 .place-img,
+#sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row .col-12 .place-img,
+#sekcja-beta #zad-beta .miesiac .zad-tabela div.row .col-12 .place-img,
+#sekcja-beta #zad-beta .miesiac .mapy-tabela div.row .col-12 .place-img,
+#sekcja-beta #mapy-fort .miesiac .zad-tabela div.row .col-12 .place-img,
+#sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row .col-12 .place-img,
+#sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row .col-12 .place-img,
+#sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row .col-12 .place-img,
+#sekcja-fort #zad-beta .miesiac .zad-tabela div.row .col-12 .place-img,
+#sekcja-fort #zad-beta .miesiac .mapy-tabela div.row .col-12 .place-img,
+#sekcja-fort #mapy-fort .miesiac .zad-tabela div.row .col-12 .place-img,
+#sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row .col-12 .place-img {
+  width: 45px;
+  border: 2px solid #380007;
+}
+
+@media (min-width: 992px) {
+  #sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row .col-12 .place-img,
+  #sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row .col-12 .place-img,
+  #sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row .col-12 .place-img,
+  #sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row .col-12 .place-img,
+  #sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row .col-12 .place-img,
+  #sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row .col-12 .place-img,
+  #sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row .col-12 .place-img,
+  #sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row .col-12 .place-img,
+  #sekcja-beta #zad-beta .miesiac .zad-tabela div.row .col-12 .place-img,
+  #sekcja-beta #zad-beta .miesiac .mapy-tabela div.row .col-12 .place-img,
+  #sekcja-beta #mapy-fort .miesiac .zad-tabela div.row .col-12 .place-img,
+  #sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row .col-12 .place-img,
+  #sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row .col-12 .place-img,
+  #sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row .col-12 .place-img,
+  #sekcja-fort #zad-beta .miesiac .zad-tabela div.row .col-12 .place-img,
+  #sekcja-fort #zad-beta .miesiac .mapy-tabela div.row .col-12 .place-img,
+  #sekcja-fort #mapy-fort .miesiac .zad-tabela div.row .col-12 .place-img,
+  #sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row .col-12 .place-img {
+    width: 90px;
+  }
+}
+
+@media (max-width: 576px) {
+  #sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row .col-12,
+  #sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row .col-12,
+  #sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row .col-12,
+  #sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row .col-12,
+  #sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row .col-12,
+  #sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row .col-12,
+  #sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row .col-12,
+  #sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row .col-12,
+  #sekcja-beta #zad-beta .miesiac .zad-tabela div.row .col-12,
+  #sekcja-beta #zad-beta .miesiac .mapy-tabela div.row .col-12,
+  #sekcja-beta #mapy-fort .miesiac .zad-tabela div.row .col-12,
+  #sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row .col-12,
+  #sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row .col-12,
+  #sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row .col-12,
+  #sekcja-fort #zad-beta .miesiac .zad-tabela div.row .col-12,
+  #sekcja-fort #zad-beta .miesiac .mapy-tabela div.row .col-12,
+  #sekcja-fort #mapy-fort .miesiac .zad-tabela div.row .col-12,
+  #sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row .col-12 {
+    border-left: 0px solid #380007;
+    border-right: 0px solid #380007;
+    border-bottom: 1px solid #380007;
+    margin-bottom: 0;
+    font-size: 10px;
+  }
+  #sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela div.row .col-12 a,
+  #sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela div.row .col-12 a,
+  #sekcja-kalendarz #zad-beta .miesiac .zad-tabela div.row .col-12 a,
+  #sekcja-kalendarz #zad-beta .miesiac .mapy-tabela div.row .col-12 a,
+  #sekcja-kalendarz #mapy-fort .miesiac .zad-tabela div.row .col-12 a,
+  #sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela div.row .col-12 a,
+  #sekcja-beta #zad-powtarzalne .miesiac .zad-tabela div.row .col-12 a,
+  #sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela div.row .col-12 a,
+  #sekcja-beta #zad-beta .miesiac .zad-tabela div.row .col-12 a,
+  #sekcja-beta #zad-beta .miesiac .mapy-tabela div.row .col-12 a,
+  #sekcja-beta #mapy-fort .miesiac .zad-tabela div.row .col-12 a,
+  #sekcja-beta #mapy-fort .miesiac .mapy-tabela div.row .col-12 a,
+  #sekcja-fort #zad-powtarzalne .miesiac .zad-tabela div.row .col-12 a,
+  #sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela div.row .col-12 a,
+  #sekcja-fort #zad-beta .miesiac .zad-tabela div.row .col-12 a,
+  #sekcja-fort #zad-beta .miesiac .mapy-tabela div.row .col-12 a,
+  #sekcja-fort #mapy-fort .miesiac .zad-tabela div.row .col-12 a,
+  #sekcja-fort #mapy-fort .miesiac .mapy-tabela div.row .col-12 a {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 990px) {
+  #sekcja-kalendarz #zad-powtarzalne .miesiac .zad-tabela .mapafortu,
+  #sekcja-kalendarz #zad-powtarzalne .miesiac .mapy-tabela .mapafortu,
+  #sekcja-kalendarz #zad-beta .miesiac .zad-tabela .mapafortu,
+  #sekcja-kalendarz #zad-beta .miesiac .mapy-tabela .mapafortu,
+  #sekcja-kalendarz #mapy-fort .miesiac .zad-tabela .mapafortu,
+  #sekcja-kalendarz #mapy-fort .miesiac .mapy-tabela .mapafortu,
+  #sekcja-beta #zad-powtarzalne .miesiac .zad-tabela .mapafortu,
+  #sekcja-beta #zad-powtarzalne .miesiac .mapy-tabela .mapafortu,
+  #sekcja-beta #zad-beta .miesiac .zad-tabela .mapafortu,
+  #sekcja-beta #zad-beta .miesiac .mapy-tabela .mapafortu,
+  #sekcja-beta #mapy-fort .miesiac .zad-tabela .mapafortu,
+  #sekcja-beta #mapy-fort .miesiac .mapy-tabela .mapafortu,
+  #sekcja-fort #zad-powtarzalne .miesiac .zad-tabela .mapafortu,
+  #sekcja-fort #zad-powtarzalne .miesiac .mapy-tabela .mapafortu,
+  #sekcja-fort #zad-beta .miesiac .zad-tabela .mapafortu,
+  #sekcja-fort #zad-beta .miesiac .mapy-tabela .mapafortu,
+  #sekcja-fort #mapy-fort .miesiac .zad-tabela .mapafortu,
+  #sekcja-fort #mapy-fort .miesiac .mapy-tabela .mapafortu {
+    width: 100%;
+  }
+}
+
+#kontakt {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#kontakt p {
+  font-size: 12px;
+  color: #390008;
+}
+
+#kontakt p a {
+  text-decoration: none;
+  color: #390008;
+}
+
+#kontakt p a:hover {
+  color: #5a383d;
+  font-weight: bold;
+}
+
+table {
+  display: inline;
+}
+
+table .ilosc {
+  border: 2px outset #380007;
+}
+
+table .td-img {
+  background: url(../purty_wood/purty_wood.png) no-repeat;
+  border: 2px outset #380007;
+}
+
+table .td-img img {
+  width: 33px;
+}
+
+#item {
+  display: none;
+  font-size: 9px;
+  border: 2px solid #380007;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.results .crafting[visible="false"],
+.no-result {
+  display: none;
+}
+
+.results.crafting[visible="true"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.results #rzemioslo {
+  overflow: hidden !important;
+}
+
+#scroll {
+  position: fixed;
+  background: #380007;
+  left: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#scroll a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#scroll a i {
+  font-size: 40px;
+  display: block;
+  margin: 0;
+  height: 100%;
+}
+
+#scroll a i::before {
+  text-align: center;
+  display: block;
+  line-height: 50px;
+}
+/*# sourceMappingURL=west.css.map */

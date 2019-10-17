@@ -1,0 +1,2145 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="pl">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VV82BZDD3D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-VV82BZDD3D');
+  </script>
+
+  <title>WEST-INFO - kalkulator rzemiosła w grze the-west. Zadania eventowe z Bety. Kalendarz zadań powtarzalnych
+  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#db5945">
+  <link rel="stylesheet" href="../css/west.css" type="text/css" />
+  <link rel="shortcut icon" href="../image/logo1.png">
+  <!--BOOTSTRAP  https://codepen.io/arturkot/pen/b9d87ceda60c86ca9575033e84278d57-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!--FONT AWESOME-->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
+  <script type="text/babel" src="../script/appachivement.js"></script>
+  <script type="text/babel" src="../script/app.js"></script> <!-- babel -->
+</head>
+
+<body>
+  <div id="background-site"></div>
+  <div class="tlo">
+    <header>
+      <div id="root"></div>
+      <img src="https://westpl.innogamescdn.com//images/items/head/leather_hat_yellow.png?5" alt="the-west.pl">
+      <h1 title="the-west west info">WEST</h1>
+      <p title="Kalkulator rzemiosła">Kalkulator rzemiosła - strona poświęcona grze the-west<br />
+        <span style="font-size:18px;" title="nowe aktualizacje the-west.pl">
+          Nowe zadania z Bety:<br>Dzieje się coś dziwnego - Something strange is happening<br>Sprawdź także nowe
+          rzemiosło
+          <br>Zadania powtarzalne: 27.10 do 14.11 Trzydniowa fiesta
+          <br />28.10 do 8.11 Zachodni koszmar
+          <br />30.10 do 8.11 Hallowen
+          <br />Zadania okresowe: 14.10
+          <a href="https://tw-calc.net/quests/group/134" style="text-decoration:none;color:unset">Gigant z oceanu -
+            klik</a>
+          <br /> oraz <a href="https://tw-calc.net/quests/group/143" style="text-decoration:none;color:unset"> Gigant z
+            lądu - klik</a>
+        </span>
+        <br />
+        <span>Aby policzyć ile produktów potrzebujesz do wytworzenia, rozwiń
+          listę z rzemiosłem a następnie kliknij na produkt który chcesz wytworzyć i wpisz żądaną ilość.</span>
+      </p>
+    </header>
+    <script type="text/javascript">
+      $(document.innerHTML).ready(function () {
+        $('.linia-1').click(function () {
+          $('.linia-1-zwin').slideToggle("slow");
+        });
+        $('.linia-2').click(function () {
+          $('.linia-2-zwin').slideToggle("slow");
+        });
+        $('.linia-3').click(function () {
+          $('.linia-3-zwin').slideToggle("slow");
+        });
+        $('.linia-4').click(function () {
+          $('.linia-4-zwin').slideToggle("slow");
+        });
+        $('.linia-5').click(function () {
+          $('.linia-5-zwin').slideToggle("slow");
+        });
+        $('.linia-6').click(function () {
+          $('.linia-6-zwin').slideToggle("slow");
+        });
+        $('.linia-7').click(function () {
+          $('.linia-7-zwin').slideToggle("slow");
+        });
+      });
+    </script>
+    <div class="card">
+      <!--NAWIGACJA ZAKŁADEK-->
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link" id="kalkulator-tab" href="../index.html" role="tab" aria-controls="kalkulator"
+              aria-selected="true">Rzemiosło</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="kalendarz-tab" href="../zadaniaPowtarzalne/zadaniaPowtarzalne.html">Kalendarz zadań
+              powtarzalnych</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" id="zadaniaBeta-tab" href="#zadaniaBeta">Zadania z Bety</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="fort-tab" href="../fort/fort.html">Forty</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <div class="tab-content" id="myTabContent">
+          <!--RZEMIOSLO-->
+          <div class="tab-pane" id="kalkulator" role="tabpanel" aria-labelledby="kalkulator-tab"></div>
+          <!--KALENDARZ ZADAN POWTARZALNYCH-->
+          <div class="tab-pane" id="kalendarz" role="tabpanel" aria-labelledby="kalendarz-tab"></div>
+          <!--ZADANIA Z BETY-->
+          <div class="tab-pane show active" id="zadaniaBeta" role="tabpanel" aria-labelledby="zadaniaBeta-tab">
+            <section id="sekcja-beta">
+              <div id="zad-beta">
+                <div class="row miesiac">
+                  <div class="col-12">
+                    <h2 class="linia-7" title="Dzieje sie coś dziwnego - Something strange is happening">Dzieje sie coś
+                      dziwnego - Something strange is happening</h2>
+                    <div class="zad-tabela linia-7-zwin">
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <h3>Zleceniodawca</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">
+                          <h3>Potrzebne do przyjęcia</h3>
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <h3>Potrzebne do zakończenia</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <h3>Możliwe nagrody</h3>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Odwiedź salon Henrego</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Henry Walker</p>
+                          <img src="../image/Zleceniodawca/Henry-Walker.png" alt="Henry Walker"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Zaakceptowane zadanie: Coś jest w jej domu</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>20</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Coś jest w jej domu</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Maria Roalstad</p>
+                          <img src="../image/Zleceniodawca/Maria-Roalstad.png" alt="Maria Roalstad"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Modlitwa 2x</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>250</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/craft/Kadzidlo.png" alt="Kadzidło" class="img-responsive nagroda">
+                              <p>Kadzidło</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/Swieca51746.png" alt="Świeca" title="Świeca"
+                                class="img-responsive nagroda">
+                              <p>Świeca<br />[item=51746000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Gotowanie z Marią</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Maria Roalstad</p>
+                          <img src="../image/Zleceniodawca/Maria-Roalstad.png" alt="Maria Roalstad"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Kadzidło 1 szt</div>
+                          <div>Świeca 1 szt [item=51746000]</div>
+                          <div>Ziemniak 15 szt</div>
+                          <div>Pomidor 5 szt</div>
+                          <div>Łosoś 2 szt</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Najgorsza noc Marii</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Maria Roalstad</p>
+                          <img src="../image/Zleceniodawca/Maria-Roalstad.png" alt="Maria Roalstad"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Naszyjnik Waupee [item=51747000]</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda"></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Amulet wykonany przez Waupee</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Waupee</p>
+                          <img src="../image/Zleceniodawca/dziadek-waupee.png" alt="Dziadek Waupee"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Ząb kojota 5 szt</div>
+                          <div>Pióro kruka 2 szt</div>
+                          <div>Skóra węża 1 szt</div>
+                          <div>Nieoszlifowany rubin 4 szt</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/NaszyjnikWaupee51747.png" alt="Kurtka Marii"
+                                class="img-responsive nagroda">
+                              <p>Naszyjnik Waupee<br />[item=51747000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Nocowanie z duchem</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Maria Roalstad</p>
+                          <img src="../image/Zleceniodawca/Maria-Roalstad.png" alt="Maria Roalstad"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Ostra finka 1 szt</div>
+                          <div>Ostra siekiera drwala 1 szt</div>
+                          <div>Broń odprzodowa 1 szt</div>
+                          <div>Zupa rybna 1 szt</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>600</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Zimna ręka</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Maria Roalstad</p>
+                          <img src="../image/Zleceniodawca/Maria-Roalstad.png" alt="Maria Roalstad"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Załóż: Osra finka</div>
+                          <div>Przegrane pojedynki z bandytami 1x</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>100</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/KawalekZdjecia51748.png" alt="Kawałek Zdjęcia"
+                                title="Kawałek Zdjęcia" class="img-responsive nagroda">
+                              <p>Kawałek Zdjęcia<br />[item=51748000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Siostry</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Henry Walker</p>
+                          <img src="../image/Zleceniodawca/Henry-Walker.png" alt="Henry Walker"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Whiskey 2 szt</div>
+                          <div>Siano 3 szt</div>
+                          <div>Pomidor 4 szt</div>
+                          <div>Fasola 4 szt</div>
+                          <div>Stek 5 szt</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Spotkanie ze słynnymi spirytystami</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Henry Walker</p>
+                          <img src="../image/Zleceniodawca/Henry-Walker.png" alt="Henry Walker"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Zaakceptowane zadanie: Rozwiązanie problemu ducha Marii</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>100</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Rozwiązanie problemu ducha Marii</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Maria Roalstad</p>
+                          <img src="../image/Zleceniodawca/Maria-Roalstad.png" alt="Maria Roalstad"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>1000 $</div>
+                          <div>Idź do Miasto Widmo</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/PudelkoTradera51749.png" alt="Pudełko tradera"
+                                title="Pudełko tradera" class="img-responsive nagroda">
+                              <p>Pudełko tradera<br />[item=51749000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Starsza Pani w mieście</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Miasto Widmo</p>
+                          <img src="../image/Zleceniodawca/Miasto-Widmo.png" alt="Miasto Widmo"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Kawałek zdjęcia 1 szt</div>
+                          <div>Pudełko tradera 1 szt</div>
+                          <div>Eksploracja kontynentu 4h</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Jakiś czas później</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Maria Roalstad</p>
+                          <img src="../image/Zleceniodawca/Maria-Roalstad.png" alt="Maria Roalstad"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link"></div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/KoszTowarow51750.png" alt="Kosz towarów"
+                                title="Kosz towarów do użycia" class="img-responsive nagroda">
+                              <p>Kosz towarów<br />[item=51750000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row miesiac">
+                  <div class="col-12">
+                    <h2 class="linia-6" title="Save Octoberfest">Save Octoberfest</h2>
+                    <div class="zad-tabela linia-6-zwin">
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <h3>Zleceniodawca</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">
+                          <h3>Potrzebne do przyjęcia</h3>
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <h3>Potrzebne do zakończenia</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <h3>Możliwe nagrody</h3>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Po żniwach</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Henry Walker</p>
+                          <img src="../image/Zleceniodawca/Henry-Walker.png" alt="Henry Walker"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Zaakceptowane zadanie: Łowcy</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>100</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Łowcy</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Dzienne zadania</p>
+                          <img src="../image/Zleceniodawca/zadania-dzienne.png" alt="Zadania dzienne"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Pecyzyjna kusza 1szt</div>
+                          <div>Precyzyjna strzelba 1szt</div>
+                          <div>Zardzewiały shotgun 1szt</div>
+                          <div>Precyzyjna proca 1szt</div>
+                          <div>Remington 1szt</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>300</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>5000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Przygotowanie do Octoberfestu</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Henry Walker</p>
+                          <img src="../image/Zleceniodawca/Henry-Walker.png" alt="Henry Walker"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Kufel [item=51655000] 10szt</div>
+                          <div>Mąka 15szt</div>
+                          <div>Surowe jajka 2szt</div>
+                          <div>Butelka mleka 2szt</div>
+                          <div>Zakończone zadanie: Strzelanie do beczek piwa</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>800</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Łowcy w opałach część 1</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Punkt Zachodni</p>
+                          <img src="../image/Zleceniodawca/PunktZachodni.png" alt="Punkt Zachodni"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">Musisz być na miejscu: Punkt Zachodni</div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Zabij Zły Bliźniak</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>600</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Łowcy w opałacz część 2</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Punkt Zachodni</p>
+                          <img src="../image/Zleceniodawca/PunktZachodni.png" alt="Punkt Zachodni"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">Musisz być na miejscu: Punkt Zachodni</div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Ratatuj z rybą [item=51127000] 2szt</div>
+                          <div>Ryba zawinięta w gazetę 3szt</div>
+                          <div>Biały koń 5szt</div>
+                          <div>Idź do Las Dicksona</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/Kufel=51655000.png" alt="Kufel"
+                                class="img-responsive nagroda">
+                              <p>4x [item=51655000]</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/UOP/blue_letter.png" alt="100 Obligacji"
+                                class="img-responsive nagroda">
+                              <p>100 Obligacji</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Więcej kufli do piwa</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Las Dicksona</p>
+                          <img src="../image/Zleceniodawca/LasDicksona.png" alt="Las Dicksona"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">Musisz być na miejscu: Las Dicksona</div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Pomarańcza 10szt</div>
+                          <div>Rzemień 3szt</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>300</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/Kufel=51655000.png" alt="Kufel"
+                                class="img-responsive nagroda">
+                              <p>2x [item=51655000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Zasadzka</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Punkt Wschodni</p>
+                          <img src="../image/Zleceniodawca/PunktWschodni.png" alt="Punkt Wschodni"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">Musisz być na miejscu: Punkt Wschodni</div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Ziemniak 15szt</div>
+                          <div>Jagody 15szt</div>
+                          <div>Mięso kraba 10szt</div>
+                          <div>Fasola 20szt</div>
+                          <div>Kukurydza 20 szt</div>
+                          <div>Indyk 10szt</div>
+                          <div>Naprawa wozów 2h</div>
+                          <div>Ochrona wozów osadników 5h</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>800</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/Kufel=51655000.png" alt="Kufel"
+                                class="img-responsive nagroda">
+                              <p>2x [item=51655000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Strzelanie do beczek piwa</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Miasto Widmo</p>
+                          <img src="../image/Zleceniodawca/Miasto-Widmo.png" alt="Miasto Widmo"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">Musisz być na miejscu: Miasto Widmo</div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Ściganie bandytów 10h</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/Kufel=51655000.png" alt="Kufel" title="Kufel"
+                                class="img-responsive nagroda">
+                              <p>2x [item=51655000]</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/BeczkaPiwa51656000.png" alt="Beczka piwa"
+                                title="Beczka piwa" class="img-responsive nagroda">
+                              <p>2x [item=51656000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Wracając do miasta</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>John Fitzburn</p>
+                          <img src="../image/Zleceniodawca/John-Fitzburn.png" alt="John Fitzburn"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Beczka piwa [item=51656000] 2 szt</div>
+                          <div>Wygrane pojedynki z bandytami 5x</div>
+                          <div>Poszukiwani listem gończym, złapani 2x</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/Kufel=51655000.png" alt="Kufel" title="Kufel"
+                                class="img-responsive nagroda">
+                              <p>2x [item=51655000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Szczęśliwe zakończenie</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>John Fitzburn</p>
+                          <img src="../image/Zleceniodawca/John-Fitzburn.png" alt="John Fitzburn"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link"></div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/skrzynie/BardzoZadkaSkrzyniaOctoberfest50682000.png"
+                                alt="Bardzo żadka srzynia Octoberfest" title="Bardzo żadka srzynia Octoberfest"
+                                class="img-responsive nagroda">
+                              <p>[item=50682000]</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/buffy/PiwoBawarskie2356000.png" alt="Piwo bawarskie"
+                                title="Piwo bawarskie" class="img-responsive nagroda">
+                              <p>[item=2356000]</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/buffy/SerceZPiernika2355000.png" alt="Serce z piernika"
+                                title="Serce z piernika" class="img-responsive nagroda">
+                              <p>[item=2355000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row miesiac">
+                  <div class="col-12">
+                    <h2 class="linia-5" title="Czas żniw - Harvest Time">Czas żniw - Harvest Time</h2>
+                    <div class="zad-tabela linia-5-zwin">
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <h3>Zleceniodawca</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">
+                          <h3>Potrzebne do przyjęcia</h3>
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <h3>Potrzebne do zakończenia</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <h3>Możliwe nagrody</h3>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Renowacja domu</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Maria Roalstad</p>
+                          <img src="../image/Zleceniodawca/Maria-Roalstad.png" alt="Maria Roalstad"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Zaakceptowane zadanie: Każda pomocna dłoń jest mile widziana</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>200</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/yield/item_51611.png?5"
+                                alt="Kłos pszenicy" class="img-responsive nagroda">
+                              <p>150 szt do wydropienia</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-6">
+                              <img
+                                src="https://media.innogames.com/External_Community_Management/The_West/community_event/harvest/chest_seeds.png"
+                                alt="" class="img-responsive nagroda">
+                              <p>Karty kolekcjonerskie i <img src="../image/menuicons.png" alt='osiągnięcie'>Zbierz
+                                wszystkie nasiona</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Każda pomocna dłoń jest mile widziana</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Farma Wilsona</p>
+                          <img src="../image/Zleceniodawca/Farma-Wilsona.png" alt="Farma Wilsona"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">Czas serwera: 2:00-12:00</div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Litery 4 szt</div>
+                          <div>Zbieranie zboża 6h</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>600</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>120</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Następnego dnia</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Farma Wilsona</p>
+                          <img src="../image/Zleceniodawca/Farma-Wilsona.png" alt="Farma Wilsona"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">Czas serwera: 10-24</div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Mała torba listonosza [item=51646000] 4 szt</div>
+                          <div>Zrywanie liści tytoniu 5h</div>
+                          <div>Przepędzanie ptaków z pola 20x</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>600</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>200</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/craft/PapierosZFiltrem.png" alt="Papieros z Filtrem"
+                                class="img-responsive nagroda">
+                              <p>[item=1939000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Nocne poszukiwania</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Maria Roalstad</p>
+                          <img src="../image/Zleceniodawca/Maria-Roalstad.png" alt="Maria Roalstad"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">Czas serwera: 10-24</div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Mała torba listonosza [item=51646000] 4 szt</div>
+                          <div>Butelka wody [item=51649000] 4 szt</div>
+                          <div>Eksploracja kontynentu 8h</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>700</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Senny dzień</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Farma Wilsona</p>
+                          <img src="../image/Zleceniodawca/Farma-Wilsona.png" alt="Farma Wilsona"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Krwawe bandaże [item=51648000] 1szt</div>
+                          <div>Zbieranie kukurydzy 6h</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>600</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>120</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Przeszukanie rannego mężczyzny</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Farma Wilsona</p>
+                          <img src="../image/Zleceniodawca/Farma-Wilsona.png" alt="Farma Wilsona"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Zakończone zadanie: Młody chłopak</div>
+                          <div>Przebyty dystans: 3000</div>
+                          <div>Czas przespany: 1x</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>700</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/craft/Pierog.png" alt="Pieróg z warzywami"
+                                class="img-responsive nagroda">
+                              <p>[item=1873000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Młody chłopak</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Miasto Widmo</p>
+                          <img src="../image/Zleceniodawca/Miasto-Widmo.png" alt="Miasto Widmo"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Bandaże</div>
+                          <div>Panaceum [item=1983000]</div>
+                          <div>Mikstura życia [item=2117000]</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/UOP.png" alt="Obligacje" class="img-responsive nagroda">
+                              <p>50</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Dostawa Pony Express</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Maria Roalstad</p>
+                          <img src="../image/Zleceniodawca/Maria-Roalstad.png" alt="Maria Roalstad"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Kłusak</div>
+                          <div>Naprawione siodło [item=2520000]</div>
+                          <div>Transport amunicji 7h</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>600</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>1200</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/buffy/IndianskiRytualnyNaszyjnik.png"
+                                alt="Indiański rytualny naszyjnik" class="img-responsive nagroda">
+                              <p>[item=2483000]</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/buffy/ProszekZeSkorupy.png" alt="Proszek ze skorupy rakietowego żółwia"
+                                class="img-responsive nagroda">
+                              <p>[item=2135000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row miesiac">
+                  <div class="col-12">
+                    <h2 class="linia-4" title="Paul Wielki Palladyn - Paul the great paladin">Paul Wielki Palladyn -
+                      Paul the great paladin</h2>
+                    <div class="zad-tabela linia-4-zwin">
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <h3>Zleceniodawca</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">
+                          <h3>Potrzebne do przyjęcia</h3>
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <h3>Potrzebne do zakończenia</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <h3>Możliwe nagrody</h3>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Zwiadowca</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>John Fitzburn</p>
+                          <img src="../image/Zleceniodawca/John-Fitzburn.png" alt="John Fitzburn"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link"></div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/yield/item_51554.png?5"
+                                alt="Historia plemion" class="img-responsive nagroda">
+                              <p>Historia plemion<br />[item=51554000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Obóz wroga</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>John Fitzburn</p>
+                          <img src="../image/Zleceniodawca/John-Fitzburn.png" alt="John Fitzburn"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Idź do miasta widmo</div>
+                          <div>Łapanie koni 5h</div>
+                          <div>Eksploracja kontynentu 6h</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>300</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/yield/coffee.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>Kawa</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/animal/item_51553.png?5"
+                                alt="Koń Szpiegowski" class="img-responsive nagroda">
+                              <p>Koń szpiegowski<br />[item=51553000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Dobra strategia</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>John Fitzburn</p>
+                          <img src="../image/Zleceniodawca/John-Fitzburn.png" alt="John Fitzburn"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Transport amunicji 6h</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/craft/ObiadDzentelmena.png" alt="Obiad Dżentelmena"
+                                class="img-responsive nagroda">
+                              <p>Obiad dżentelmena</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Kłopot</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>John Fitzburn</p>
+                          <img src="../image/Zleceniodawca/John-Fitzburn.png" alt="John Fitzburn"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Idź do Wioska indiańska Waupee</div>
+                          <div>Załóż Historia Plemion</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>200</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Idealny plan</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>John Fitzburn</p>
+                          <img src="../image/Zleceniodawca/John-Fitzburn.png" alt="John Fitzburn"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Obserwacja fortecy 15h</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>700</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Napad na bank</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>John Fitzburn</p>
+                          <img src="../image/Zleceniodawca/John-Fitzburn.png" alt="John Fitzburn"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link"></div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>200</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/left_arm/item_51555.png?6"
+                                alt="Statuetka Paladyna" class="img-responsive nagroda">
+                              <p>Statuetka Paladyna<br />[item=51555000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row miesiac">
+                  <div class="col-12">
+                    <h2 class="linia-3" title="Parada Święta Niepodległości - The Independence Day parade">Parada
+                      Święta
+                      Niepodległości - The Independence Day parade</h2>
+                    <div class="zad-tabela linia-3-zwin">
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <h3>Zleceniodawca</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">
+                          <h3>Potrzebne do przyjęcia</h3>
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <h3>Potrzebne do zakończenia</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <h3>Możliwe nagrody</h3>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Zajęty dzień</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Henry Walker</p>
+                          <img src="../image/Zleceniodawca/Henry-Walker.png" alt="Henry Walker"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Zaakceptowane zadanie: Strój Maya</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>50</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/yield/item_51484.png?5"
+                                alt="Waluta eventowa" class="img-responsive nagroda">
+                              <p>Fajerwerki 25 szt</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Strój Marii</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Maria Roalstad</p>
+                          <img src="../image/Zleceniodawca/Maria-Roalstad.png" alt="Maria Roalstad"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Czerwone buty Marii 1 szt</div>
+                          <div>Kurtka Marii 1 szt</div>
+                          <div>Spódnica Marii</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="John Fitzburn"
+                                class="img-responsive nagroda">
+                              <p>250</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/yield/item_51485.png?5"
+                                alt="Waluta eventowa" class="img-responsive nagroda">
+                              <p>Fajerwerki 50 szt</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Dwóch niebezpiecznych bandytów</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>John Fitzburn</p>
+                          <img src="../image/Zleceniodawca/John-Fitzburn.png" alt="John Fitzburn"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Poszukiwani listem gończym, złapani 2x</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>400</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/foot/item_51549.png?5"
+                                alt="Czerwone buty Marii" class="img-responsive nagroda">
+                              <p>Czerwone buty Marii<br />[item=51549000]</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/yield/item_51485.png?5"
+                                alt="Waluta eventowa" class="img-responsive nagroda">
+                              <p>Fajerwerki 50 szt</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Złodzieje</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>John Fitzburn</p>
+                          <img src="../image/Zleceniodawca/John-Fitzburn.png" alt="John Fitzburn"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Wygrane pojedynki z bandytami 10x</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>400</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/body/item_51547.png?5"
+                                alt="Kurtka Marii" class="img-responsive nagroda">
+                              <p>Kurtka Marii<br />[item=51547000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Nasz ban jest okradziony</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>John Fitzburn</p>
+                          <img src="../image/Zleceniodawca/John-Fitzburn.png" alt="John Fitzburn"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">Aby wykonać to zadanie nie możesz zaakceptować zadania
+                          "Napad na bank"</div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Przeganianie rozbójników 5h</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/pants/item_51548.png?5"
+                                alt="Spódnica Marii" class="img-responsive nagroda">
+                              <p>Spódnica Marii<br />[item=51548000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Napad na bank</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>John Fitzburn</p>
+                          <img src="../image/Zleceniodawca/John-Fitzburn.png" alt="John Fitzburn"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">
+                          Aby wykonać to zadanie nie możesz zaakceptować zadania "Nasz bank jest okradziony"
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Wygrane przygody 1x</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/pants/item_51548.png?5"
+                                alt="Spódnica Marii" class="img-responsive nagroda">
+                              <p>Spódnica Marii<br />[item=51548000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Zespół muzyczny</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Maria Roalstad</p>
+                          <img src="../image/Zleceniodawca/Maria-Roalstad.png" alt="Maria Roalstad"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Szklanka wody 30 szt</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-12">Do wyboru</div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/right_arm/item_51550.png?6"
+                                alt="Bęben amerykańskiej armii" class="img-responsive nagroda">
+                              <p>Bęben amerykańskiej armii<br />[item=51550000]</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/right_arm/item_51551.png?6"
+                                alt="Flet amerykańskiej armii" class="img-responsive nagroda">
+                              <p>Flet amerykańskiej armii<br />[item=51551000]</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/left_arm/item_51552.png?6"
+                                alt="Róg amerykańskiej armii" class="img-responsive nagroda">
+                              <p>Róg amerykańskiej armii<br />[item=51552000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Po paradzie I</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Waupee</p>
+                          <img src="../image/Zleceniodawca/dziadek-waupee.png" alt="Dziadek Waupee"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Kamienie półszlachetne 20szt</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-12">Do wyboru</div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/right_arm/item_51550.png?6"
+                                alt="Bęben amerykańskiej armii" class="img-responsive nagroda">
+                              <p>Bęben amerykańskiej armii<br />[item=51550000]</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/right_arm/item_51551.png?6"
+                                alt="Flet amerykańskiej armii" class="img-responsive nagroda">
+                              <p>Flet amerykańskiej armii<br />[item=51551000]</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/left_arm/item_51552.png?6"
+                                alt="Róg amerykańskiej armii" class="img-responsive nagroda">
+                              <p>Róg amerykańskiej armii<br />[item=51552000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">List męża</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Henry Walker</p>
+                          <img src="../image/Zleceniodawca/Henry-Walker.png" alt="Henry Walker"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Whiskey 7 szt</div>
+                          <div>Tequila 5 szt</div>
+                          <div>Rum 2 szt</div>
+                          <div>Vodka 1 szt</div>
+                          <div>Butelka mleka 5 szt</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-12">Do wyboru</div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/right_arm/item_51550.png?6"
+                                alt="Bęben amerykańskiej armii" class="img-responsive nagroda">
+                              <p>Bęben amerykańskiej armii<br />[item=51550000]</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/right_arm/item_51551.png?6"
+                                alt="Flet amerykańskiej armii" class="img-responsive nagroda">
+                              <p>Flet amerykańskiej armii<br />[item=51551000]</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/left_arm/item_51552.png?6"
+                                alt="Róg amerykańskiej armii" class="img-responsive nagroda">
+                              <p>Róg amerykańskiej armii<br />[item=51552000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Powrót do rzeczywistości</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Henry Walker</p>
+                          <img src="../image/Zleceniodawca/Henry-Walker.png" alt="Henry Walker"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link"></div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/yield/item_51488.png?5"
+                                alt="Waluta eventowa" class="img-responsive nagroda">
+                              <p>400 fajerwerków <br />[item=51488000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row miesiac">
+                  <div class="col-12">
+                    <h2 class="linia-2" title="Ukryte listy - The hidden letters">Ukryte listy - The hidden letters
+                    </h2>
+                    <div class="zad-tabela linia-2-zwin">
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <h3>Zleceniodawca</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">
+                          <h3>Potrzebne do przyjęcia</h3>
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <h3>Potrzebne do zakończenia</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <h3>Możliwe nagrody</h3>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Renowacja domu</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Dzienne zadania</p>
+                          <img src="../image/Zleceniodawca/zadania-dzienne.png" alt="Zadania dzienne"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6">
+                              <img src="https://westzz.innogamescdn.com/images/items/yield/item_51469.png?6" alt=""
+                                class="img-responsive nagroda">
+                              <p>2 szt [item=51469000]</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6">
+                              <img src="https://westzz.innogamescdn.com/images/items/yield/item_51470.png?6" alt=""
+                                class="img-responsive nagroda">
+                              <p>2szt [item=51470000]</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6">
+                              <img src="https://westzz.innogamescdn.com/images/items/yield/item_51471.png?6" alt=""
+                                class="img-responsive nagroda">
+                              <p>2 szt [item=51471000] </p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6">
+                              <img src="https://westzz.innogamescdn.com/images/items/yield/item_51472.png?6" alt=""
+                                class="img-responsive nagroda">
+                              <p>2szt [item=51472000]</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Pierwszy kawałek listu 2szt</div>
+                          <div>Drugi kawałek listu 2 szt</div>
+                          <div>Trzeci kawałek listu 2 szt</div>
+                          <div>Czwarty kawałek listu 2 szt</div>
+                          <div>Młotek 1 szt</div>
+                          <div>Piła 1 szt</div>
+                          <div>Gwoździe 30 szt</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>600</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/yield/item_51468.png?6" alt=""
+                                class="img-responsive nagroda">
+                              <p>100 szt do wydropienia</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-12 col-lg-12">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/item_51473.png?7" alt=""
+                                class="img-responsive nagroda">
+                              <p>Karty kolekcjonerskie i <img src="../image/menuicons.png" alt='osiągniecie'>Masz
+                                wszystkie
+                                znaczki swiata!</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Zobacz co znalazłem</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Henry Walker</p>
+                          <img src="../image/Zleceniodawca/Henry-Walker.png" alt="Henry Walker"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Pierwszy kawałek listu 2szt</div>
+                          <div>Drugi kawałek listu 2 szt</div>
+                          <div>Trzeci kawałek listu 2 szt</div>
+                          <div>Czwarty kawałek listu 2 szt</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>200</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Czy jestem Bob?</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>John Fitzburn</p>
+                          <img src="../image/Zleceniodawca/John-Fitzburn.png" alt="John Fitzburn"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Załóż Precyzyjna strzelba [item=112000]</div>
+                          <div>Wygrana bitwa o fort 1x</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>700</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/yield/item_51479.png?6"
+                                alt="List do Eleonore" class="img-responsive nagroda">
+                              <p>List do Eleonore</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Następna bitwa</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>John Fitzburn</p>
+                          <img src="../image/Zleceniodawca/John-Fitzburn.png" alt="John Fitzburn"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Transport amunicji 30x</div>
+                          <div>Naboje 1 szt</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>600</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Armia potrzebuje jedzenia</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>John Fitzburn</p>
+                          <img src="../image/Zleceniodawca/John-Fitzburn.png" alt="John Fitzburn"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Indyk 15 szt</div>
+                          <div>Łosoś 10 szt</div>
+                          <div>Jagody 30 szt</div>
+                          <div>Fasola 10 szt</div>
+                          <div>Pomidor 10 szt</div>
+                          <div>Borówka 20 szt</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>700</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>700</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Powrót do rzeczywistości</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Henry Walker</p>
+                          <img src="../image/Zleceniodawca/Henry-Walker.png" alt="Henry Walker"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link"></div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westpl.innogamescdn.com/images/items/yield/grilled_turkey.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>Pieczony indyk 1 szt</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Sprawdźmy resztę twojego domu</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Maria Roalstad</p>
+                          <img src="../image/Zleceniodawca/Maria-Roalstad.png" alt="Maria Roalstad"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Mąka 10 szt</div>
+                          <div>Szklanka wody 10 szt</div>
+                          <div>Węgiel drzewny 5 szt</div>
+                          <div>Kreda 3 szt</div>
+                          <div>Kwiat lotosu 7 szt</div>
+                          <div>Końskie włosie 1 szt [item=5841000] z pracy łapanie koni</div>
+                          <div>Łapanie koni 10x</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img
+                                src="https://westzz.innogamescdn.com/images/items/right_arm/creativity_duel_melee.png?5"
+                                alt="Pędzel malarski" class="img-responsive nagroda">
+                              <p>Pędzel malarski [item=1018000] </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Sekretna dziura w podłodze</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Maria Roalstad</p>
+                          <img src="../image/Zleceniodawca/Maria-Roalstad.png" alt="Maria Roalstad"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Pierwszy kawałek listu 2szt</div>
+                          <div>Drugi kawałek listu 2 szt</div>
+                          <div>Trzeci kawałek listu 2 szt</div>
+                          <div>Czwarty kawałek listu 2 szt</div>
+                          <div>Uwaga! w sumie trzeba mieć 4 szt każdego kawałka listu</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>200</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-6">
+                              <img src="https://westzz.innogamescdn.com/images/items/yield/item_51468.png?6"
+                                alt="Mała szklana fiolka" class="img-responsive nagroda">
+                              <p>Mała szklana fiolka [item=51468000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">List męża</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Dzienne zadania</p>
+                          <img src="../image/Zleceniodawca/zadania-dzienne.png" alt="Zadania Dzienne"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Obiad dżentelmena 2szt</div>
+                          <div>Zupa rybna 2 szt</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>1000</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-6">
+                              <img src="https://westpl.innogamescdn.com/images/items/yield/chef_dish_1.png?7" alt=""
+                                class="img-responsive nagroda">
+                              <p>Pudding z pomarańczami [item=51125000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Powrót do rzeczywistości</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Henry Walker</p>
+                          <img src="../image/Zleceniodawca/Henry-Walker.png" alt="Henry Walker"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link"></div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/UOP/violett-letter.png" alt="Obligacje" class="img-responsive nagroda">
+                              <p>90 Obligacji</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-6">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/item_51481.png?6" alt=""
+                                class="img-responsive nagroda">
+                              <p>[item=51481000] Najpiekniejszy list</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-6">
+                              <img src="https://westpl.innogamescdn.com/images/items/yield/damage_04.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>[item=2261000] Cztery specjalne naboje</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-6">
+                              <img src="https://westpl.innogamescdn.com/images/items/yield/liquidlife.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>[item=2117000] Mikstura zycia</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row miesiac">
+                  <div class="col-12">
+                    <h2 class="linia-1" title="Mały czarny niedźwiedź - little black bear">Mały czarny niedźwiedź -
+                      little black bear</h2>
+                    <div class="zad-tabela linia-1-zwin">
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <h3>Zleceniodawca</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">
+                          <h3>Potrzebne do przyjęcia</h3>
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <h3>Potrzebne do zakończenia</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <h3>Możliwe nagrody</h3>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Problem na farmie</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Maya Roalstad</p>
+                          <img src="../image/Zleceniodawca/Maria-Roalstad.png" alt="Maria Roalstad"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">Wypasanie Jagniąt 30 min</div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>600</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Baribal</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Wauppe</p>
+                          <img src="../image/Zleceniodawca/dziadek-waupee.png" alt="Dziadek Waupee"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">"Baribal"</div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Zbieranie jagód 2h</div>
+                          <div>Zbieranie borówek 2h</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>600</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Wizyta plemienia Śpiewającej Wody</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Wioska Indiańska Waupee</p>
+                          <img src="../image/Zleceniodawca/wioska-indianska.png" alt="Wioska Indiańska Waupee"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">Na miejscu: Wioska Indiańska Waupee</div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Dzban 2 szt</div>
+                          <div>Orle pióro 2 szt</div>
+                          <div>Jagody 2 szt</div>
+                          <div>Pstrąg 5 szt</div>
+                          <div>Łosoś 10 szt</div>
+                          <div>Nasiona 10 szt</div>
+                          <div>Mięso Kraba 7 szt</div>
+                          <div>Cygara 5 szt</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westpl.innogamescdn.com//images/items/neck/teeth_p1.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>[item=41088000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Niezauważony błąd</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Wioska Indiańska Waupee</p>
+                          <img src="../image/Zleceniodawca/wioska-indianska.png" alt="Wioska Indiańska Waupee"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">Na miejscu: Wioska Indiańska Waupee</div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Załóż Mustang</div>
+                          <div>Mustang 2 szt <span>(w sumie potrzebne są 3 mustangi)</span></div>
+                          <div>Kradzież koni 2h</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>300</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Oswojony</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Wioska Indiańska Waupee</p>
+                          <img src="../image/Zleceniodawca/wioska-indianska.png" alt="Wioska Indiańska Waupee"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">Na miejscu: Wioska Indiańska Waupee</div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Załóż Szlachetny naszyjnik z zębami [item=41088000]</div>
+                          <div>Miód 2 szt</div>
+                          <div>Zbieranie kukurydzy 3h</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://westzz.innogamescdn.com/images/items/animal/item_51460.png?6" alt=""
+                                class="img-responsive nagroda">
+                              <p>Mlody Czarny Niedźwiedź<br>Prędkość 200%</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Złe wieści</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Maya Roalstad</p>
+                          <img src="../image/Zleceniodawca/Maria-Roalstad.png" alt="Maria Roalstad"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Naprawa wozów 2h</div>
+                          <div>Transport amunicji 4h</div>
+                          <div>Zbieranie kukurydzy 3h</div>
+                          <div>Eksploracja kontynentu 10h</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>600</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>700</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Przekręt</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Wauppe</p>
+                          <img src="../image/Zleceniodawca/dziadek-waupee.png" alt="Dziadek Waupee"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Hazardzista w trasie 2h</div>
+                          <div>Karmienie bydła 1h</div>
+                          <div>Pony-Express 3h</div>
+                          <div>transport koni 1h</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Zimna noc</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Wauppe</p>
+                          <img src="../image/Zleceniodawca/dziadek-waupee.png" alt="Dziadek Waupee"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Idź do Wioska Indiańska Wapuee</div>
+                          <div>Kradzież koni 1h</div>
+                          <div>Polowanie na grizzly 5h</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>400</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Wizyta "Białego Pazura"</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Wioska Indiańska Waupee</p>
+                          <img src="../image/Zleceniodawca/wioska-indianska.png" alt="Wioska Indiańska Waupee"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">Na miejscu: Wioska Indiańska Waupee</div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Pal drewniany 3 szt</div>
+                          <div>Skóra bizona 3 szt</div>
+                          <div>Scyzoryk 1 szt</div>
+                          <div>Poroże 1 szt</div>
+                          <div>Naprawianie płotów 3h</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/craft/SkoraWeza.png" alt="Skóra Węża" class="img-responsive nagroda">
+                              <p>[item=1820000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Pamiątka</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Waupee</p>
+                          <img src="../image/Zleceniodawca/dziadek-waupee.png" alt="Dziadek Waupee"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Idż do: Wioska Indiańska Waupee</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-6">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/item_51459.png?6" alt=""
+                                class="img-responsive nagroda">
+                              <p>[item=51459000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Naturalny bieg wydarzeń</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Wioska Indiańska Waupee</p>
+                          <img src="../image/Zleceniodawca/wioska-indianska.png" alt="Wioska Indiańska Waupee"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">Na miejscu: Wioska Indiańska Waupee</div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <div>Transport koni 8h</div>
+                          <div>Łapanie koni 7h</div>
+                          <div>Fajka pokoju 1 szt</div>
+                          <div>Załóż: Mustang</div>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 nazwa">Obowiązki</div>
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <p>Maria Roalstad</p>
+                          <img src="../image/Zleceniodawca/Maria-Roalstad.png" alt="Maria Roalstad"
+                            class="img-responsive place-img">
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link"></div>
+                        <div class="col-12 col-sm-4 nazwa-link"></div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-6">
+                              <img src="//westzz.innogamescdn.com/images/items/right_arm/item_51458.png?6" alt=""
+                                class="img-responsive nagroda">
+                              <p>[item=51458000]</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-6">
+                              <img src="//westzz.innogamescdn.com/images/items/right_arm/item_51457.png?7" alt=""
+                                class="img-responsive nagroda">
+                              <p>[item=51457000]</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!--MAPKI FORTOWE-->
+          <div class="tab-pane" id="fort" role="tabpanel" aria-labelledby="fort-tab"></div>
+        </div>
+      </div>
+    </div>
+    <footer id="kontakt">
+      <p>Kontakt z administracją: <a href="mailto:bialka104@interia.pl">&copy bialka104@interia.pl</a></p>
+      <p><span>Większośc grafik pochodzi z przeglądarkowej gry the-west.net oraz wikipedii</span></p>
+    </footer>
+  </div>
+  <div id="scroll"><a href="#root"><i class="far fa-arrow-alt-circle-up"></i></a></div>
+  <script type="text/javascript" src="../script/rzemioslo.js"></script>
+  <!-- Biblioteka React ona najpierw musi byc załadowana żeby apka działała (przed REACT DOM)-->
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <!-- Biblioteka React DOM  ładujemy po Biblioteka React-->
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <!-- Babel - kompilowanie JSX i ES6 do ES5 -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!---ten tylko do developmentu-->
+  <script type="text/babel" src="script/app.js"></script>
+  <script type="text/babel" src="script/appachivement.js"></script>
+  <script type="text/javascript">
+    function onmouseoverHandler(num) {
+      const el = document.querySelectorAll(".my-popup");//pobieramy wszystkie selectory z klassą .my-popup
+      el[num].classList.add("module"); //wybieramy z tablicy el[] numer kolejny selektora który jest przekazywany w atrybucie onmouseover i dodajemy mu klase modulo
+      const hover = document.querySelector(".module"); //pobieramy element z klasą module
+      hover.style.setProperty("display", "block"); //zmieniamy display na block
+    };
+    function onmouseoutHandler(num) {
+      const hov = document.querySelector(".module"); //pobieramy miejsce docelowe z klasą module
+      hov.style.setProperty("display", "none"); //zmieniamy display elementu
+      hov.classList.remove("module"); //usuwamy klase module
+    };
+  </script>
+</body>
+
+</html>

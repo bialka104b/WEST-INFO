@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="pl">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138837033-6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-138837033-6');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138837033-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-138837033-4');
+  </script>
+  <title>WEST-INFO - kalkulator rzemiosła w grze the-west. Zadania eventowe z Bety. Kalendarz zadań powtarzalnych
+  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#db5945">
+  <link rel="stylesheet" href="../css/west.css" type="text/css" />
+  <link rel="shortcut icon" href="../image/logo1.png">
+  <!--BOOTSTRAP  https://codepen.io/arturkot/pen/b9d87ceda60c86ca9575033e84278d57-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!--FONT AWESOME-->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
+  <script type="text/babel" src="../script/appachivement.js"></script>
+  <script type="text/babel" src="../script/app.js"></script> <!-- babel -->
+</head>
+
+<body>
+  <div id="background-site"></div>
+  <div class="tlo">
+    <header>
+      <div id="root"></div>
+      <img src="https://westpl.innogamescdn.com//images/items/head/leather_hat_yellow.png?5" alt="the-west.pl">
+      <h1 title="the-west west info">WEST</h1>
+      <p title="Kalkulator rzemiosła">Kalkulator rzemiosła - strona poświęcona grze the-west<br />
+        <span style="font-size:18px;" title="nowe aktualizacje the-west.pl">
+          Nowe zadania z Bety:<br>Dzieje się coś dziwnego - Something strange is happening<br>Sprawdź także nowe
+          rzemiosło
+          <br>Zadania powtarzalne: 27.10 do 14.11 Trzydniowa fiesta
+          <br />28.10 do 8.11 Zachodni koszmar
+          <br />30.10 do 8.11 Hallowen
+          <br />Zadania okresowe: 14.10
+          <a href="https://tw-calc.net/quests/group/134" style="text-decoration:none;color:unset">Gigant z oceanu -
+            klik</a>
+          <br /> oraz <a href="https://tw-calc.net/quests/group/143" style="text-decoration:none;color:unset"> Gigant z
+            lądu - klik</a>
+        </span>
+        <br />
+        <span>Aby policzyć ile produktów potrzebujesz do wytworzenia, rozwiń
+          listę z rzemiosłem a następnie kliknij na produkt który chcesz wytworzyć i wpisz żądaną ilość.</span>
+      </p>
+    </header>
+    <script type="text/javascript">
+      $(document.innerHTML).ready(function () {
+        $('.linia-1').click(function () {
+          $('.linia-1-zwin').slideToggle("slow");
+        });
+        $('.linia-2').click(function () {
+          $('.linia-2-zwin').slideToggle("slow");
+        });
+        $('.linia-3').click(function () {
+          $('.linia-3-zwin').slideToggle("slow");
+        });
+        $('.linia-4').click(function () {
+          $('.linia-4-zwin').slideToggle("slow");
+        });
+        $('.linia-5').click(function () {
+          $('.linia-5-zwin').slideToggle("slow");
+        });
+        $('.linia-6').click(function () {
+          $('.linia-6-zwin').slideToggle("slow");
+        });
+        $('.linia-7').click(function () {
+          $('.linia-7-zwin').slideToggle("slow");
+        });
+        $('.linia-8').click(function () {
+          $('.linia-8-zwin').slideToggle("slow");
+        });
+        $('.linia-9').click(function () {
+          $('.linia-9-zwin').slideToggle("slow");
+        });
+        $('.linia-10').click(function () {
+          $('.linia-10-zwin').slideToggle("slow");
+        });
+        $('.linia-11').click(function () {
+          $('.linia-11-zwin').slideToggle("slow");
+        });
+        $('.linia-12').click(function () {
+          $('.linia-12-zwin').slideToggle("slow");
+        });
+      });
+    </script>
+    <div class="card">
+      <!--NAWIGACJA ZAKŁADEK-->
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link" id="kalkulator-tab" href="../index.html" role="tab" aria-controls="kalkulator"
+              aria-selected="true">Rzemiosło</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" id="kalendarz-tab" href="#kalendarz">Kalendarz zadań powtarzalnych</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="zadaniaBeta-tab" href="../zadaniaBeta/zadaniaBeta.html">Zadania z Bety</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="fort-tab" href="../fort/fort.html">Forty</a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="card-body">
+        <div class="tab-content" id="myTabContent">
+          <!--RZEMIOSLO-->
+          <div class="tab-pane" id="kalkulator" role="tabpanel" aria-labelledby="kalkulator-tab"></div>
+          <!--KALENDARZ ZADAN POWTARZALNYCH-->
+          <div class="tab-pane show active" id="kalendarz" role="tabpanel" aria-labelledby="kalendarz-tab">
+            <section id="sekcja-kalendarz">
+              <div id="zad-powtarzalne">
+                <div class="row miesiac">
+                  <div class="col-12">
+                    <h2 class="linia-1">Styczeń</h2>
+                    <div class="zad-tabela linia-1-zwin">
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <h3>Data</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">
+                          <h3>Nazwa zadania</h3>
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <h3>Link</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <h3>Możliwe nagrody</h3>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">23.01 do 30.01</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Gorączka złota">Gorączka złota</div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <a
+                            href="https://tw-calc.net/quests/repeatable/124">https://tw-calc.net/quests/repeatable/124</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/umiejka.png" alt="Darmowy punkt umiejetności"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>1000</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>1490</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row miesiac">
+                  <div class="col-12">
+                    <h2 class="linia-2">Luty</h2>
+                    <div class="zad-tabela linia-2-zwin">
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <h3>Data</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">
+                          <h3>Nazwa zadania</h3>
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <h3>Link</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <h3>Możliwe nagrody</h3>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">14.02 do 18.02</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Walentynki">Walentynki</div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/43">https://tw-calc.net/quests/repeatable/43</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/umiejka.png" alt="Darmowy punkt umiejętności"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>180</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">14.02 do 3.03</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Miłość wisi w powietrzu">Miłość wisi w powietrzu
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/125">https://tw-calc.net/quests/repeatable/125</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://wiki.the-west.pl/images/thumb/d/d4/Serca2015.png/25px-Serca2015.png"
+                                alt="Waluta eventowa" style="width:34px" class="img-responsive nagroda">
+                              <p>750</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">14.02 do 3.03</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Głupi Romeo">Głupi Romeo</div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/139">https://tw-calc.net/quests/repeatable/139</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/umiejka.png" alt="Darmowy punkt umiejętności"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>1100</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>820</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">14.02 do 6.03</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Przemineło z walentynkami">Przemineło z
+                          walentynkami</div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/126">https://tw-calc.net/quests/repeatable/126</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/umiejka.png" alt="Darmowy punkt umiejętności"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/UOP.png" alt="Obligacje" class="img-responsive nagroda">
+                              <p>25</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>1402</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row miesiac">
+                  <div class="col-12">
+                    <h2 class="linia-3">Marzec</h2>
+                    <div class="zad-tabela linia-3-zwin">
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <h3>Data</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">
+                          <h3>Nazwa zadania</h3>
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <h3>Link</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <h3>Możliwe nagrody</h3>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">Brak zadań powtarzalnych w tym miesiącu</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row miesiac">
+                  <div class="col-12">
+                    <h2 class="linia-4">Kwiecień</h2>
+                    <div class="zad-tabela linia-4-zwin">
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <h3>Data</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">
+                          <h3>Nazwa zadania</h3>
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <h3>Link</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <h3>Możliwe nagrody</h3>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">13.04 do 4.05</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Wielkanoc">Wielkanoc</div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/46">https://tw-calc.net/quests/repeatable/46</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/umiejka.png" alt="Darmowy punkt umiejętności"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/skills/Sila.png" alt="Darmowy punkt cech"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/skills/Charyzma.png" alt="Darmowy punkt cech"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>250</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>2490</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">13.04 do 4.05</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Wielkanocny koszyk">Wielkanocny koszyk</div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/166">https://tw-calc.net/quests/repeatable/166</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>1500</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/UOP/green-letter.png" alt="Obligacje" class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/easter_2017_quest_13.png?7" alt=""
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">30.04 do 11.05</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Urodziny the west">Urodziny the west</div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/79">https://tw-calc.net/quests/repeatable/79</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/umiejka.png" alt="Darmowy punkt umiejętności"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>1297</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/orange_manual.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row miesiac">
+                  <div class="col-12">
+                    <h2 class="linia-5">Maj</h2>
+                    <div class="zad-tabela linia-5-zwin">
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <h3>Data</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">
+                          <h3>Nazwa zadania</h3>
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <h3>Link</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <h3>Możliwe nagrody</h3>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-col-12 col-sm-2 data-nagroda">6.05 do 12.05</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Tydzień antydietowy">Tydzień antydietowy</div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/81">https://tw-calc.net/quests/repeatable/81</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/umiejka.png" alt="Darmowy punkt umiejętności"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>1364</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/calorie_bomb.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">25.05 do 1.06</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Atak Wogonów">Atak Wogonów</div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/80">https://tw-calc.net/quests/repeatable/80</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/umiejka.png" alt="Darmowy punkt umiejętności"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>1821</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">25.05 do 31.05</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Dzień Ręcznika">Dzień Ręcznika</div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/event/2013/towel_day">https://tw-calc.net/event/2013/towel_day</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/body/wool_suit.png?5" alt="Szlafrok"
+                                class="img-responsive nagroda">
+                              <p>[item=40037000]</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/menuicons.png" alt="Osiągnięcie" class="img-responsive nagroda">
+                              <p>Kolekcja ręczników</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row miesiac">
+                  <div class="col-12">
+                    <h2 class="linia-6">Czerwiec</h2>
+                    <div class="zad-tabela linia-6-zwin">
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <h3>Data</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">
+                          <h3>Nazwa zadania</h3>
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <h3>Link</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <h3>Możliwe nagrody</h3>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">22.06 do 29.06</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Parada Christopchera">Parada Christopchera</div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/92">https://tw-calc.net/quests/repeatable/92</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/umiejka.png" alt="Darmowy punkt umiejętności"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>1872</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row miesiac">
+                  <div class="col-12">
+                    <h2 class="linia-7">Lipiec</h2>
+                    <div class="zad-tabela linia-7-zwin">
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <h3>Data</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">
+                          <h3>Nazwa zadania</h3>
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <h3>Link</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <h3>Możliwe nagrody</h3>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">1.07 do 15.07</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="West point">West point</div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/149">https://tw-calc.net/quests/repeatable/149</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/skills/ZnajomoscZwierzat.png" alt="Darmowy punkt cech"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>150</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>1015</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/lifeelixir.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/craft/CiasteczkoKukurydziane.png" alt="Kukurydziane ciasteczka"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/UOP/red-letter.png" alt="Czerwony list" class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/mate_tea.png?5" alt="Herbata Mate"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="https://wiki.the-west.pl/images/9/92/VP.png" alt="Punkty Veterana"
+                                class="img-responsive nagroda">
+                              <p>50</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/craft/Whiskey.png" alt="Bardzo stara whiskey"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">1.07 do 15.07</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Dzień Niepodległości">Dzień Niepodległości</div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/49">https://tw-calc.net/quests/repeatable/49</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/umiejka.png" alt="Darmowy punkt umiejętności"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/skills/Charyzma.png" alt="Darmowy punkt cech"
+                                class="img-responsive nagroda">
+                              <p>2</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>110</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>700</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">29.07 do 10.08</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Tydzień przyjaźni">Tydzień przyjaźni</div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/97">https://tw-calc.net/quests/repeatable/97</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/umiejka.png" alt="Darmowy punkt umiejętności"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doswiadczenie"
+                                class="img-responsive nagroda">
+                              <p>1680</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row miesiac">
+                  <div class="col-12">
+                    <h2 class="linia-8">Sierpień</h2>
+                    <div class="zad-tabela linia-8-zwin">
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <h3>Data</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">
+                          <h3>Nazwa zadania</h3>
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <h3>Link</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <h3>Możliwe nagrody</h3>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">8.08 do 15.08</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Kocięta">Kocięta</div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/107">https://tw-calc.net/quests/repeatable/107</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/umiejka.png" alt="Darmowy punkt umiejętności"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>1000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">27.08 do 2.09 </div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Święto pracy">Święto pracy</div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/108">https://tw-calc.net/quests/repeatable/108</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/umiejka.png" alt="Darmowy punkt umiejętności"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>1100</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row miesiac">
+                  <div class="col-12">
+                    <h2 class="linia-9">Wrzesień</h2>
+                    <div class="zad-tabela linia-9-zwin">
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <h6>Data</h6>
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">
+                          <h6>Nazwa zadania</h6>
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <h6>Link</h6>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <h6>Możliwe nagrody</h6>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">14.09 do 28.09</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Octoberfest nadchodzi">Octoberfest nadchodzi
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/155">https://tw-calc.net/quests/repeatable/155</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/umiejka.png" alt="Darmowy punkt umiejętności"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>1750</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>4950</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/veal_sausage.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/bavarian_beer.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/pretzel.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/roasted_pork_knuckle.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row miesiac">
+                  <div class="col-12">
+                    <h2 class="linia-10">Październik</h2>
+                    <div class="zad-tabela linia-10-zwin">
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <h3>Data</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">
+                          <h3>Nazwa zadania</h3>
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <h3>Link</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <h3>Możliwe nagrody</h3>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">27.10 do 14.11</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Trzydniowa fiesta">Trzydniowa fiesta</div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/158">https://tw-calc.net/quests/repeatable/158</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/umiejka.png" alt="Darmowy punkt umiejętności"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>700</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>6000</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img
+                                src="https://wiki.the-west.pl/images/thumb/4/47/Kv%C4%9Bt_afrik%C3%A1nu.png/25px-Kv%C4%9Bt_afrik%C3%A1nu.png"
+                                alt="" class="img-responsive nagroda">
+                              <p>870</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/dayofthedead_sugarstatue.png?5"
+                                alt="" class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/dayofthedead_pandelosmuertos.png?5"
+                                alt="" class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/dayofthedead_mezcal.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/dayofthedead_sugarskull.png?5"
+                                alt="" class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/dayofthedead_tamales.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">28.10 do 8.11</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Zachodni koszmar">Zachodni koszmar</div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/113">https://tw-calc.net/quests/repeatable/113</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/umiejka.png" alt="Darmowy punkt umiejętności"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>2809</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">30.10 do 8.11</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Halloween">Halloween</div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/56">https://tw-calc.net/quests/repeatable/56</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/umiejka.png" alt="Darmowy punkt umiejętności"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>1720</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row miesiac">
+                  <div class="col-12">
+                    <h2 class="linia-11">Listopad</h2>
+                    <div class="zad-tabela linia-11-zwin">
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <h3>Data</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">
+                          <h3>Nazwa zadania</h3>
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <h3>Link</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <h3>Możliwe nagrody</h3>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">1.11 - 11.11</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Dia de los Muertos">Dia de los Muertos</div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/132">https://tw-calc.net/quests/repeatable/132</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>420</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>5510</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">11.11 - 19.11</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Doskonały skok">Doskonały skok</div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/116">https://tw-calc.net/quests/repeatable/116</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/umiejka.png" alt="Darmowy punkt umiejętności"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>1674</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">23.11 - 1.12</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Święto Dziękczynienia">Święto Dziękczynienia
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/33">https://tw-calc.net/quests/repeatable/33</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/umiejka.png" alt="Darmowy punkt umiejętności"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/skills/Charyzma.png" alt="Darmowy punkt cech"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>4340</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row miesiac">
+                  <div class="col-12">
+                    <h2 class="linia-12">Grudzień</h2>
+                    <div class="zad-tabela linia-12-zwin">
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">
+                          <h3>Data</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 nazwa-link">
+                          <h3>Nazwa zadania</h3>
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link">
+                          <h3>Link</h3>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <h3>Możliwe nagrody</h3>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">2.12 - 1.01</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Duch Świąt">Duch Świąt</div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/77">https://tw-calc.net/quests/repeatable/77</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/skills/Charyzma.png" alt="Darmowy punkt cech"
+                                class="img-responsive nagroda">
+                              <p>2</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>1270</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/xmas_licorice.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>2</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/xmas_cookie.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>3</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/xmas_oat.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>2</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/xmas_cracker.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>2</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/xmas_lebkuchen.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/xmas_potato.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>2</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">2.12 - 6.01</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Duch Bożego Narodzenia">Duch Bożego Narodzenia
+                        </div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/136">https://tw-calc.net/quests/repeatable/136</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/umiejka.png" alt="Darmowy punkt umiejętności"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>620</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">6.12 - 27.12</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Święta Bożego Narodzenia">Święta Bożego
+                          Narodzenia</div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/34">https://tw-calc.net/quests/repeatable/34</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/skills/Sila.png" alt="Darmowy punkt cech"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/skills/Wytrzymalosc.png" alt="Darmowy punkt umiejętności"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>1220</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>3515</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/xmas_repeat.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">20.12 - 31.01</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Dziadek Mróz">Dziadek Mróz</div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/163">https://tw-calc.net/quests/repeatable/163</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>1000</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>4800</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/xmas_present_mid.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/mate_tea.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/attribute_04.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-2 data-nagroda">31.12 do 13.01</div>
+                        <div class="col-12 col-sm-3 nazwa-link" title="Sylwester">Sylwester</div>
+                        <div class="col-12 col-sm-4 nazwa-link"><a
+                            href="https://tw-calc.net/quests/repeatable/122">https://tw-calc.net/quests/repeatable/122</a>
+                        </div>
+                        <div class="col-12 col-sm-3 data-nagroda">
+                          <div class="row img">
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/umiejka.png" alt="Darmowy punkt umiejętności"
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/dolar.png" alt="Dolary" class="img-responsive nagroda">
+                              <p>500</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="../image/NagrodyDoZadan/exp.png" alt="Doświadczenie"
+                                class="img-responsive nagroda">
+                              <p>1000</p>
+                            </div>
+                            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                              <img src="//westzz.innogamescdn.com/images/items/yield/molten_lead.png?5" alt=""
+                                class="img-responsive nagroda">
+                              <p>1</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!--ZADANIA Z BETY-->
+          <div class="tab-pane" id="zadaniaBeta" role="tabpanel" aria-labelledby="zadaniaBeta-tab"></div>
+          <!--MAPKI FORTOWE-->
+          <div class="tab-pane" id="fort" role="tabpanel" aria-labelledby="fort-tab"></div>
+        </div>
+      </div>
+    </div>
+    <footer id="kontakt">
+      <p>Kontakt z administracją: <a href="mailto:bialka104@interia.pl">&copy bialka104@interia.pl</a></p>
+      <p><span>Większośc grafik pochodzi z przeglądarkowej gry the-west.net oraz wikipedii</span></p>
+    </footer>
+  </div>
+  <div id="scroll"><a href="#root"><i class="far fa-arrow-alt-circle-up"></i></a></div>
+  <script type="text/javascript" src="../script/rzemioslo.js"></script>
+  <!-- Biblioteka React ona najpierw musi byc załadowana żeby apka działała (przed REACT DOM)-->
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <!-- Biblioteka React DOM  ładujemy po Biblioteka React-->
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <!-- Babel - kompilowanie JSX i ES6 do ES5 -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!---ten tylko do developmentu-->
+  <script type="text/babel" src="../script/app.js"></script>
+  <script type="text/babel" src="../script/appachivement.js"></script>
+  <script type="text/javascript">
+    function onmouseoverHandler(num) {
+      const el = document.querySelectorAll(".my-popup");//pobieramy wszystkie selectory z klassą .my-popup
+      el[num].classList.add("module"); //wybieramy z tablicy el[] numer kolejny selektora który jest przekazywany w atrybucie onmouseover i dodajemy mu klase modulo
+      const hover = document.querySelector(".module"); //pobieramy element z klasą module
+      hover.style.setProperty("display", "block"); //zmieniamy display na block
+    };
+    function onmouseoutHandler(num) {
+      const hov = document.querySelector(".module"); //pobieramy miejsce docelowe z klasą module
+      hov.style.setProperty("display", "none"); //zmieniamy display elementu
+      hov.classList.remove("module"); //usuwamy klase module
+    };
+  </script>
+</body>
+
+</html>

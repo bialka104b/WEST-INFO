@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="pl">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138837033-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-138837033-5');
+  </script>
+  <title>WEST-INFO - kalkulator rzemiosła w grze the-west. Zadania eventowe z Bety. Kalendarz zadań powtarzalnych
+  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#db5945">
+  <link rel="stylesheet" href="../css/west.css" type="text/css" />
+  <link rel="shortcut icon" href="../image/logo1.png">
+  <!--BOOTSTRAP  https://codepen.io/arturkot/pen/b9d87ceda60c86ca9575033e84278d57-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!--FONT AWESOME-->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
+</head>
+
+<body>
+  <div id="background-site"></div>
+  <div class="tlo">
+    <header>
+      <div id="root"></div>
+      <img src="https://westpl.innogamescdn.com//images/items/head/leather_hat_yellow.png?5" alt="the-west.pl">
+      <h1 title="the-west west info">WEST</h1>
+      <p title="Kalkulator rzemiosła">Kalkulator rzemiosła - strona poświęcona grze the-west<br />
+        <span style="font-size:18px;" title="nowe aktualizacje the-west.pl">
+          Nowe zadania z Bety:<br>Dzieje się coś dziwnego - Something strange is happening<br>Sprawdź także nowe
+          rzemiosło
+          <br>Zadania powtarzalne: 27.10 do 14.11 Trzydniowa fiesta
+          <br />28.10 do 8.11 Zachodni koszmar
+          <br />30.10 do 8.11 Hallowen
+          <br />Zadania okresowe: 14.10
+          <a href="https://tw-calc.net/quests/group/134" style="text-decoration:none;color:unset">Gigant z oceanu -
+            klik</a>
+          <br /> oraz <a href="https://tw-calc.net/quests/group/143" style="text-decoration:none;color:unset"> Gigant z
+            lądu - klik</a>
+        </span>
+        <br />
+        <span>Aby policzyć ile produktów potrzebujesz do wytworzenia, rozwiń
+          listę z rzemiosłem a następnie kliknij na produkt który chcesz wytworzyć i wpisz żądaną ilość.</span>
+      </p>
+    </header>
+
+
+
+    <div class="card">
+      <!--NAWIGACJA ZAKŁADEK-->
+      <!--file navigation.js REACT JSX-->
+      <div class="card-header"></div>
+      <!-- KARTY ZAKŁADEK -->
+      <!-- file fort.js REACT JSX -->
+      <div class="card-body" id="card-body"></div>
+    </div>
+
+    <footer id="kontakt">
+      <p>Kontakt z administracją: <a href="mailto:bialka104@interia.pl">&copy bialka104@interia.pl</a></p>
+      <p><span>Większośc grafik pochodzi z przeglądarkowej gry the-west.net oraz wikipedii</span></p>
+    </footer>
+  </div>
+  <div id="scroll"><a href="#root"><i class="far fa-arrow-alt-circle-up"></i></a></div>
+  <script type="text/babel" src="fort.js"></script>
+  <script type="text/babel" src="navigation.js"></script>
+  <script type="text/babel" src="app.js"></script> <!-- babel -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.linia-2').click(function () {
+        $('.linia-2-zwin').slideToggle("slow");
+      });
+      $('.linia-3').click(function () {
+        $('.linia-3-zwin').slideToggle("slow");
+      });
+      $('.linia-4').click(function () {
+        $('.linia-4-zwin').slideToggle("slow");
+      });
+    });
+  </script>
+</body>
+
+</html>

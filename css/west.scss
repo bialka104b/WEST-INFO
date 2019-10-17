@@ -1,0 +1,629 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2019-04-08, 10:35:21
+    Author     : bialka104@interia.pl
+*/
+@import url("https://fonts.googleapis.com/css?family=Faster+One");
+@import url("https://fonts.googleapis.com/css?family=Exo");
+@import url("https://fonts.googleapis.com/css?family=Italianno");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300i");
+@import url("https://fonts.googleapis.com/css?family=Anton");
+body {
+  cursor: default;
+  .row {
+    margin: 0;
+  }
+  #background-site {
+    background: url(../purty_wood/purty_wood.png);
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    position: fixed;
+  }
+}
+.col-12 {
+  padding: 0;
+}
+.tlo {
+  text-align: center;
+  z-index: 0;
+}
+header {
+  .pull-right {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    border: 2px solid #390008;
+    border-radius: 3px;
+    &:focus {
+      outline: none;
+    }
+    input {
+      outline-style: none;
+      background: rgba(46, 0, 7, 0.75);
+      color: white;
+      border-radius: 0;
+      border: 0px;
+      font-family: "Roboto", sans-serif;
+      &::-webkit-input-placeholder {
+        color: white;
+      }
+      &::-moz-placeholder {
+        color: white;
+      } /* firefox 19+ */
+      &:-ms-input-placeholder {
+        color: white;
+      } /* ie */
+      &:focus {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+        background: rgba(46, 0, 7, 0.75);
+        color: white;
+      }
+    }
+  }
+  img {
+    width: 150px;
+    height: 150px;
+    transform: skew(20deg, -10deg);
+    -webkit-transform: skew(20deg, -10deg);
+    -moz-transform: skew(20deg, -10deg);
+    -o-transform: skew(20deg, -10deg);
+    margin-bottom: -150px;
+    margin-left: -300px;
+    z-index: 2;
+  }
+  h1 {
+    font-family: "Faster One", cursive;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 100px;
+    color: #390008;
+    text-shadow: 15px 15px 5px #935728;
+    text-decoration: overline;
+  }
+  p {
+    font-family: "Anton", sans-serif;
+    color: #390008;
+    span {
+      font-family: "Roboto", sans-serif;
+      font-size: 0.7rem;
+      font-weight: bold;
+    }
+  }
+}
+.card {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border: 0px solid rgb(0, 0, 0) !important;
+  .card-header {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 0px solid rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    ul {
+      li {
+        font-size: 15px;
+        a {
+          color: #390008;
+          font-family: "Anton", sans-serif;
+          letter-spacing: 0.8px;
+        }
+        .active {
+          color: white;
+          background: #390008;
+        }
+      }
+    }
+  }
+}
+
+section {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: 992px) {
+    width: 90%;
+  }
+  @media (min-width: 1200px) {
+    width: 80%;
+  }
+}
+#sekcja-rzemioslo {
+  font-size: 13px;
+  #rzemioslo {
+    background: url(../light_grey_floral_motif/light_grey_floral_motif.png);
+    border-radius: 38px;
+    border: 3px solid #380007;
+    box-shadow: 0px 0px 20px 15px #935728;
+    .rzemioslo-100,
+    .rzemioslo-200,
+    .rzemioslo-300,
+    .rzemioslo-400,
+    .rzemioslo-500,
+    .rzemioslo-600,
+    .rzemioslo-700 {
+      background: rgba(46, 0, 7, 0.75);
+      color: white;
+      .col-12 {
+        h2 {
+          font-family: "Italianno", cursive;
+          margin-bottom: 0;
+          font-size: 3.5em;
+          padding: 5px;
+          align-self: center;
+          text-shadow: 15px 15px 5px #390008;
+          @media (min-width: 992px) {
+            font-size: 5em;
+          }
+        }
+      }
+      .craft {
+        border-bottom: 2px solid #380007;
+        margin-top: 30px;
+        cursor: pointer;
+        i {
+          font-size: 0.5em;
+        }
+      }
+      .col-rzemioslo {
+        border-left: 1px solid #380007;
+        border-right: 1px solid #380007;
+        width: 100%;
+        height: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-family: "Roboto", sans-serif;
+        display: none;
+        .row-kucharz,
+        .row-znachor,
+        .row-rymarz,
+        .row-kowal {
+          h3 {
+            padding-top: 5%;
+            padding-bottom: 5%;
+            padding-left: 10%;
+            margin-bottom: 0;
+            height: 80px;
+            width: 100%;
+            text-align: left;
+            font-family: "Italianno", cursive;
+            font-weight: bold;
+            text-shadow: 2px 5px 1px #390008;
+          }
+        }
+        .row-kucharz {
+          background: url(../image/craft/MiodPitny.png) no-repeat right top;
+        }
+        .row-znachor {
+          background: url(../image/craft/Herbata.png) no-repeat right top;
+        }
+        .row-rymarz {
+          background: url(../image/craft/SchowekNaAmunicje.png) no-repeat right
+            top;
+        }
+        .row-kowal {
+          background: url(../image/craft/Bagnet.png) no-repeat right top;
+        }
+        .product {
+          margin-bottom: 15px;
+          padding-top: 15px;
+          border-top: 1px solid #380007;
+          .product-img {
+            position: relative;
+            padding: 0;
+            width: 73px;
+            height: auto;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            a {
+              display: block;
+              width: 100%;
+              border-radius: 55%;
+              img {
+                background: url(../purty_wood/purty_wood.png) no-repeat;
+                border: 3px outset rgb(56, 0, 7);
+                border-radius: 50%;
+                width: 100%;
+              }
+            }
+            .my-popup {
+              display: none;
+              background: url(../purty_wood/purty_wood.png);
+              position: absolute;
+              z-index: 2;
+              width: 200px;
+              border: 2px solid #380007;
+              border-radius: 10px 10px 0 0;
+              box-shadow: 0px 0px 10px 1px white;
+              .opis {
+                padding-top: 30px;
+                background: url(../light_grey_floral_motif/brown.png);
+                p {
+                  margin: 0;
+                }
+              }
+            }
+          }
+          .product-description {
+            padding: 0;
+            h6 {
+              margin-bottom: 2px;
+              font-weight: normal;
+              font-size: 15px;
+              font-family: "Roboto", sans-serif;
+              font-weight: bold;
+              border-bottom: 1px dotted white;
+              margin-left: 2px;
+              margin-right: 2px;
+            }
+            p {
+              font-size: 10px;
+              margin-bottom: 2px;
+              &:first-of-type {
+                padding-top: 3px;
+                height: 50px;
+              }
+              span {
+                margin-right: 5px;
+              }
+              input {
+                color: white;
+                background-color: rgba(0, 0, 0, 0.1);
+                border: 0px solid;
+                width: 50%;
+                text-align: center;
+                border-radius: 5px;
+                outline: none;
+                @media (min-width: 992px) {
+                  border-radius: 2px;
+                }
+              }
+              img {
+                width: 17px;
+                height: 14px;
+              }
+            }
+          }
+          .span-stopien {
+            padding: 0;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            cursor: pointer;
+            i {
+              display: block;
+              width: 100%;
+              font-size: 1.7em;
+              color: #380007;
+              text-shadow: 1px 1px 2px white;
+              cursor: pointer;
+            }
+          }
+          .wytworzenie {
+            padding: 0;
+            margin-top: 15px;
+            display: none;
+
+            .wytworzenie-produkty {
+              padding: 0;
+            }
+            .wytworzenie-przepis {
+              padding: 0;
+              text-align: center;
+              width: 33px;
+              height: 41px;
+
+              div {
+                background: url(../purty_wood/purty_wood.png) no-repeat;
+                border: 2px outset #380007;
+                width: auto;
+                height: auto;
+                img {
+                  width: 33px;
+                  height: auto;
+                }
+              }
+            }
+            .opis {
+              font-size: 12px;
+              text-align: center;
+              .col-2 {
+                padding: 0;
+                input {
+                  width: 40px;
+                  outline: none;
+                  background: rgba(46, 0, 7, 0.75);
+                  color: white;
+                  border: 2px solid #380007;
+                }
+              }
+              .col-10 {
+                p {
+                  display: inline-block;
+                  width: 100%;
+                  margin-bottom: 2px;
+                  font-weight: 600;
+                  span {
+                    margin-right: 10px;
+                    font-size: 10px;
+                  }
+                  .green {
+                    color: green;
+                  }
+                  .red {
+                    color: red;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .rzemioslo-100 {
+      border-radius: 35px 35px 0 0;
+    }
+    .rzemioslo-700 {
+      border-radius: 0 0 35px 35px;
+      .craft {
+        border-bottom: none;
+      }
+      .col-rzemioslo {
+        border-top: 2px solid #380007;
+      }
+      .col-kucharz {
+        border-bottom-left-radius: 35px !important;
+      }
+      .col-kowal {
+        border-bottom-right-radius: 35px !important;
+      }
+    }
+  }
+  #suma {
+    position: fixed;
+    right: 20px;
+    top: 10%;
+    bottom: 10%;
+    background: rgba(0, 0, 0, 0);
+    width: 150px;
+    height: 100%;
+    .dodaj {
+      display: inline;
+      tr {
+        background: #380007;
+        color: white;
+      }
+    }
+  }
+}
+#sekcja-kalendarz,
+#sekcja-beta,
+#sekcja-fort {
+  font-size: 13px;
+  @media (max-width: 500px) {
+    font-size: 0.5rem;
+  }
+  #zad-powtarzalne,
+  #zad-beta,
+  #mapy-fort {
+    background: url(../light_grey_floral_motif/light_grey_floral_motif.png);
+    border-radius: 38px;
+    border: 3px solid #380007;
+    box-shadow: 0px 0px 20px 15px #935728;
+    .miesiac {
+      background: rgba(46, 0, 7, 0.75);
+      color: white;
+      border-bottom: 2px solid #380007;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      &:first-of-type {
+        border-radius: 35px 35px 0 0;
+      }
+      &:last-of-type {
+        border-radius: 0 0 35px 35px;
+        border-bottom: 0px solid #380007;
+      }
+      h2 {
+        margin: 0;
+        font-family: "Italianno", cursive;
+        font-size: 3.5em;
+        padding: 5px;
+        align-self: center;
+        text-shadow: 15px 15px 5px #390008;
+        cursor: pointer;
+        @media (min-width: 992px) {
+          font-size: 5em;
+        }
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+          color: #380007;
+        }
+      }
+      .zad-tabela,
+      .mapy-tabela {
+        padding: 2px;
+        border: 2px solid #380007;
+        border-radius: 5px 5px;
+        display: none;
+        div.row {
+          border-bottom: 2px solid #380007;
+          margin-left: 5px;
+          margin-right: 5px;
+          &:last-of-type {
+            border-bottom: 0px solid #380007;
+          }
+          @media (max-width: 576px) {
+            margin-bottom: 5px;
+            border: 0px solid #380007;
+            border-bottom: 2px solid #380007;
+          }
+          .nazwa {
+            font-weight: normal;
+            font-size: 15px;
+            font-family: "Roboto", sans-serif;
+            font-weight: bold;
+            padding: 0;
+            border-bottom: 2px solid #380007;
+            letter-spacing: 2px;
+            font-size: 1.1rem;
+            text-shadow: 2px 2px 1px #390008;
+            text-align: left;
+            padding-left: 20px;
+          }
+          .data-nagroda,
+          .nazwa-link {
+            padding: 5px;
+            font-weight: normal;
+            font-size: 15px;
+            font-family: "Roboto", sans-serif;
+            font-weight: bold;
+            h3 {
+              width: 100%;
+              text-align: left;
+              font-family: "Italianno", cursive;
+              font-weight: bold;
+              text-shadow: 2px 5px 1px #390008;
+              margin: 0;
+              @media (max-width: 576px) {
+                text-align: center;
+                font-size: 1.3rem;
+              }
+            }
+            .img {
+              margin: 0;
+              div.col-3 {
+                padding: 0;
+                .nagroda {
+                  height: 34px;
+                  width: 34px;
+                  object-fit: fill;
+                }
+                p {
+                  margin-bottom: 0;
+                  text-align: center;
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+          .nazwa-link {
+            border-left: 1px solid #380007;
+            border-right: 1px solid #380007;
+          }
+          .col-12 {
+            margin-bottom: 5px;
+            margin-top: 5px;
+            p {
+              margin-bottom: 5px;
+            }
+            .place-img {
+              width: 45px;
+              border: 2px solid #380007;
+              @media (min-width: 992px) {
+                width: 90px;
+              }
+            }
+            @media (max-width: 576px) {
+              border-left: 0px solid #380007;
+              border-right: 0px solid #380007;
+              border-bottom: 1px solid #380007;
+              margin-bottom: 0;
+              font-size: 10px;
+              a {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+        .mapafortu {
+          @media (max-width: 990px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+#kontakt {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  p {
+    font-size: 12px;
+    color: #390008;
+    a {
+      text-decoration: none;
+      color: #390008;
+      &:hover {
+        color: rgb(90, 56, 61);
+        font-weight: bold;
+      }
+    }
+  }
+}
+table {
+  display: inline;
+  .ilosc {
+    border: 2px outset #380007;
+  }
+  .td-img {
+    background: url(../purty_wood/purty_wood.png) no-repeat;
+    border: 2px outset #380007;
+    img {
+      width: 33px;
+    }
+  }
+}
+#item {
+  display: none;
+  font-size: 9px;
+  border: 2px solid #380007;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.results .crafting[visible="false"],
+.no-result {
+  display: none;
+}
+
+.results {
+  &.crafting[visible="true"] {
+    display: flex;
+  }
+  #rzemioslo {
+    overflow: hidden !important;
+  }
+}
+
+#scroll {
+  position: fixed;
+  background: #380007;
+  left: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+    i {
+      font-size: 40px;
+      display: block;
+      margin: 0;
+      height: 100%;
+      &::before {
+        text-align: center;
+        display: block;
+        line-height: 50px;
+      }
+    }
+  }
+}

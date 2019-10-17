@@ -1,72 +1,93 @@
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isClicked: false // czy jest kliknięty h2
+    };
+    this.handleShowFort = this.handleShowFort.bind(this);
+  }
+
+  handleShowFort() {
+    this.setState(prevState => ({
+      isClicked: !this.state.isClicked
+    }));
+  }
   render() {
     return (
       <React.Fragment>
-        <div class="tab-content" id="myTabContent">
+        <div className="tab-content" id="myTabContent">
           {/* <!--RZEMIOSLO--> */}
           <div
-            class="tab-pane"
+            className="tab-pane"
             id="kalkulator"
             role="tabpanel"
             aria-labelledby="kalkulator-tab"
           ></div>
           {/* <!--KALENDARZ ZADAN POWTARZALNYCH--> */}
           <div
-            class="tab-pane"
+            className="tab-pane"
             id="kalendarz"
             role="tabpanel"
             aria-labelledby="kalendarz-tab"
           ></div>
           {/* <!--ZADANIA Z BETY--> */}
           <div
-            class="tab-pane"
+            className="tab-pane"
             id="zadaniaBeta"
             role="tabpanel"
             aria-labelledby="zadaniaBeta-tab"
           ></div>
           {/* <!--MAPKI FORTOWE--> */}
           <div
-            class="tab-pane show active"
+            className="tab-pane show active"
             id="fort"
             role="tabpanel"
             aria-labelledby="fort-tab"
           >
             <section id="sekcja-fort">
               <div id="mapy-fort">
-                <div class="row miesiac">
-                  <div class="col-12">
-                    <h2 class="linia-4">Mały fort</h2>
-                    <div class="mapy-tabela linia-4-zwin">
-                      <img
-                        src="../image/maly.png"
-                        alt="Mapka mały fort"
-                        class="img-responsive mapafortu"
-                      />
-                    </div>
+                <div className="row miesiac">
+                  <div className="col-12">
+                    <h2 className="linia-4" onClick={this.handleShowFort}>
+                      Mały fort
+                    </h2>
+                    {this.state.isClicked && (
+                      <div className="mapy-tabela linia-4-zwin">
+                        <img
+                          src="../image/maly.png"
+                          alt="Mapka mały fort"
+                          className="img-responsive mapafortu"
+                        />
+                      </div>
+                    )}
                   </div>
                 </div>
-                <div class="row miesiac">
-                  <div class="col-12">
-                    <h2 class="linia-3">Średni fort</h2>
-                    <div class="mapy-tabela linia-3-zwin">
+                <div className="row miesiac">
+                  <div className="col-12">
+                    <h2 className="linia-3" onClick={this.handleShowFort}>
+                      Średni fort
+                    </h2>
+                    {/* <div className="mapy-tabela linia-3-zwin">
                       <img
                         src="../image/sredni.png"
                         alt="Mapka średni fort"
-                        class="img-responsive mapafortu"
+                        className="img-responsive mapafortu"
                       />
-                    </div>
+                    </div> */}
                   </div>
                 </div>
-                <div class="row miesiac">
-                  <div class="col-12">
-                    <h2 class="linia-2">Duży fort</h2>
-                    <div class="mapy-tabela linia-2-zwin">
+                <div className="row miesiac">
+                  <div className="col-12">
+                    <h2 className="linia-2" onClick={this.handleShowFort}>
+                      Duży fort
+                    </h2>
+                    {/* <div className="mapy-tabela linia-2-zwin">
                       <img
                         src="../image/duzy.png"
                         alt="Mapka duży fort"
-                        class="img-responsive mapafortu"
+                        className="img-responsive mapafortu"
                       />
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

@@ -63,11 +63,9 @@ class App extends React.Component {
               <div id="mapy-fort">
                 <div className="row miesiac">
                   <div className="col-12">
-                    <h2 className="linia-4" onClick={this.handleShowFort3}>
-                      Mały fort
-                    </h2>
+                    <h2 onClick={this.handleShowFort3}>Mały fort</h2>
                     {this.state.isClicked3 && (
-                      <div className="mapy-tabela linia-4-zwin">
+                      <div className="mapy-tabela">
                         <img
                           src="../image/maly.png"
                           alt="Mapka mały fort"
@@ -79,11 +77,9 @@ class App extends React.Component {
                 </div>
                 <div className="row miesiac">
                   <div className="col-12">
-                    <h2 className="linia-3" onClick={this.handleShowFort2}>
-                      Średni fort
-                    </h2>
+                    <h2 onClick={this.handleShowFort2}>Średni fort</h2>
                     {this.state.isClicked2 && (
-                      <div className="mapy-tabela linia-3-zwin">
+                      <div className="mapy-tabela">
                         <img
                           src="../image/sredni.png"
                           alt="Mapka średni fort"
@@ -95,11 +91,9 @@ class App extends React.Component {
                 </div>
                 <div className="row miesiac">
                   <div className="col-12">
-                    <h2 className="linia-2" onClick={this.handleShowFort1}>
-                      Duży fort
-                    </h2>
+                    <h2 onClick={this.handleShowFort1}>Duży fort</h2>
                     {this.state.isClicked1 && (
-                      <div className="mapy-tabela linia-2-zwin">
+                      <div className="mapy-tabela">
                         <img
                           src="../image/duzy.png"
                           alt="Mapka duży fort"
